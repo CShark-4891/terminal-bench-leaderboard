@@ -1,4 +1,4 @@
-# Self-run workflow — fork owners trigger this by pushing changes to scenario.json5.
+# Self-run workflow — fork owners trigger this by pushing changes to scenario.toml.
 name: Run Scenario
 
 on:
@@ -84,7 +84,7 @@ jobs:
 
       - name: Patch shard config into scenario
         run: |
-          npx json5 scenario.json5 | jq \
+          npx json5 scenario.toml | jq \
             --argjson shard_index ${{ matrix.shard_index }} \
             --argjson num_shards ${NUM_SHARDS} \
             --argjson num_instances '${{ inputs.num_instances || 'null' }}' \
@@ -93,7 +93,7 @@ jobs:
              .components.gateway.config.assessment_config.num_shards = $num_shards |
              if $num_instances then .components.gateway.config.assessment_config.num_instances = $num_instances else . end
             ' > patched.json
-          mv patched.json scenario.json5
+          mv patched.json scenario.toml
 
       - name: Install amber CLI
         shell: bash
@@ -114,7 +114,7 @@ jobs:
         run: |
           set -euo pipefail
           rm -rf "${AMBER_COMPOSE_DIR}"
-          amber compile scenario.json5 \
+          amber compile scenario.toml \
             --output scenario-ir.json \
             --docker-compose "${AMBER_COMPOSE_DIR}"
           if ! jq -e '.exports[] | select(.name == "results" and .capability.kind == "http")' scenario-ir.json > /dev/null; then
@@ -287,7 +287,7 @@ jobs:
             shard_results+=("$f")
           done
           # Extract participants (agentbeats IDs) from scenario
-          participants=$(npx json5 scenario.json5 | jq '.metadata.agentbeats_ids // {}')
+          participants=$(npx json5 scenario.toml | jq '.metadata.agentbeats_ids // {}')
           jq -s --argjson participants "$participants" '{
             status: (if all(.[]; .status == "completed") then "completed"
                     elif any(.[]; .status == "completed") then "partial"
@@ -365,14 +365,14 @@ jobs:
           BRANCH_NAME: ${{ steps.metadata.outputs.branch_name }}
           TARGET_REPO: ${{ steps.target.outputs.repo }}
         run: |
-          cp scenario.json5 /tmp/scenario.json5
+          cp scenario.toml /tmp/scenario.toml
           git remote add upstream https://github.com/${TARGET_REPO}.git
           git fetch upstream
           git checkout -b ${BRANCH_NAME} upstream/main
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           mkdir -p results submissions
-          cp /tmp/scenario.json5 "submissions/${UNIQUE_NAME}.json5"
+          cp /tmp/scenario.toml "submissions/${UNIQUE_NAME}.json5"
           mv results.json "results/${UNIQUE_NAME}.json"
           mv provenance.json "submissions/${UNIQUE_NAME}-provenance.json"
           git add "results/${UNIQUE_NAME}.json" "submissions/${UNIQUE_NAME}-provenance.json" "submissions/${UNIQUE_NAME}.json5"
