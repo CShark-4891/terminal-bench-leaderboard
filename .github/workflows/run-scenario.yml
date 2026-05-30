@@ -6,7 +6,7 @@ on:
     branches-ignore:
       - main
     paths:
-      - 'scenario.json5'
+      - 'scenario.toml'
   workflow_dispatch:
     inputs:
       num_shards:
