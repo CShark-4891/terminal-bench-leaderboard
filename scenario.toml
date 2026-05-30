@@ -5,5 +5,4 @@ env = {}
 [[participants]]
 agentbeats_id = "019e7812-0f8f-7a90-ab1d-e8ea69bf8709"
 name = "TerminalBench220"
-env = { CADEMICCLOUD_ENDPOINT="https://chat-ai.academiccloud.de/v1",
-ACADEMICCLOUD_MODEL="meta-llama-3.1-8b-instruct", ACADEMICCLOUD_API_KEY = "${ACADEMICCLOUD_API_KEY}" }
+env = { CADEMICCLOUD_ENDPOINT="https://chat-ai.academiccloud.de/v1", ACADEMICCLOUD_MODEL="meta-llama-3.1-8b-instruct", ACADEMICCLOUD_API_KEY = "${ACADEMICCLOUD_API_KEY}" }
