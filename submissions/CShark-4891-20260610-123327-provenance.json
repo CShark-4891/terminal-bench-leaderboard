@@ -1,0 +1,22 @@
+{
+  "image_digests": {
+    "/agent": "ghcr.io/luca-bke/eroverflow@sha256:46b43ff67eefa3e567ae9149167d092636fd4126dcd52c9d4cf108fe54aba811",
+    "/gateway": "ghcr.io/rdi-foundation/agentbeats-gateway@sha256:3f9976889c598092dc4273312ec431cbc48bbe064ff65b5613425f4990bc1d4c",
+    "/green": "ghcr.io/rdi-foundation/terminal-bench-green@sha256:c969a84ec648721d3ecbd62787ef8e1c2ada6ad85a215a275f33aa012cca5f49"
+  },
+  "manifest_digests": {
+    "/": "sha256:Ww6FLslL9woccz7p6mRKES6PkvXpLQZye2nyvyWuG8I=",
+    "/agent": "sha256:iQYOyc9NY1Ni2iMsQt7/2Ms0F+PDZsrRiuXtK9aAV+o=",
+    "/gateway": "sha256:Ba99ymNGSymbrF9jGwLfnZaSnzPrw9sTJ5veaYMxV2Q=",
+    "/green": "sha256:3vXQG8IqUc6dZnVrXtftdlOMleyMA5kg3IzUOeLehiw="
+  },
+  "timestamp": "2026-06-10T09:58:52Z",
+  "github_actions": {
+    "run_url": "https://github.com/CShark-4891/terminal-bench-leaderboard/actions/runs/27268357487",
+    "ref": "refs/heads/main",
+    "sha": "fc8572329e0584a79a5f1f38c54f54a297d8c63e",
+    "repository_url": "https://github.com/CShark-4891/terminal-bench-leaderboard",
+    "workflow_ref": "CShark-4891/terminal-bench-leaderboard/.github/workflows/run-scenario.yml@refs/heads/main",
+    "workflow_sha": "fc8572329e0584a79a5f1f38c54f54a297d8c63e"
+  }
+}
