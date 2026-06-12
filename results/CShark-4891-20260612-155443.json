@@ -1,0 +1,283 @@
+{
+  "status": "completed",
+  "participants": {
+    "green": "019d87ef-2c6d-7091-8d93-827799c2ade3",
+    "agent": "019e8472-e017-72f0-9ba9-8c5d20e02d32"
+  },
+  "results": [
+    {
+      "score": 0.0,
+      "max_score": 89,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "adaptive-rejection-sampler": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '62853179d0cc893be7ff576cfaf18148'}\", 'context_id': '82e9b078-2bba-416c-9945-0ab9c76e8ab5', 'status': 'failed'}"
+        },
+        "bn-fit-modify": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '65b24172a04c555a15baa2465850755e'}\", 'context_id': 'ca4c0efd-1283-4fb4-9b90-1f452d61a192', 'status': 'failed'}"
+        },
+        "break-filter-js-from-html": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '9110271109b2fd5a6dfc906fed748c23'}\", 'context_id': '20b77680-8cf8-43c7-9541-461e552503c8', 'status': 'failed'}"
+        },
+        "build-cython-ext": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'af7f93562714ca5816e3a63adc8d6663'}\", 'context_id': '988ef39e-74b4-483d-9746-5da629ccdb0b', 'status': 'failed'}"
+        },
+        "build-pmars": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '76c2b8157632560e86b7f7734af9b40a'}\", 'context_id': 'e67d4bd5-9283-4a2b-91c7-b1888a1231f6', 'status': 'failed'}"
+        },
+        "build-pov-ray": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '3538b53b977509047c570e7054d84d42'}\", 'context_id': 'f63e9431-e000-4489-a317-fe3b6916cbff', 'status': 'failed'}"
+        },
+        "caffe-cifar-10": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'd3c11724c3cb1b6f3cb4ad7771e8e568'}\", 'context_id': '562b907c-b83a-40e9-9e47-22faf2b6a74d', 'status': 'failed'}"
+        },
+        "cancel-async-tasks": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'b088d5630e07370edcd03d6ba051be0a'}\", 'context_id': 'a13f6a36-7c37-4007-b619-3001770f480c', 'status': 'failed'}"
+        },
+        "chess-best-move": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '14737570189bcd495136316ea1426146'}\", 'context_id': 'e62ca208-3c02-4c13-b92b-7c0ca256f314', 'status': 'failed'}"
+        },
+        "circuit-fibsqrt": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'fc58c607b9db8b7810ac326cea728f59'}\", 'context_id': 'bc142784-b769-43f4-870e-d8c2ad58e5ef', 'status': 'failed'}"
+        },
+        "cobol-modernization": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '5f9f5c1a80502470f440e226e3a6c143'}\", 'context_id': 'adea4508-df1a-4d61-a897-ebde9c1f1d8d', 'status': 'failed'}"
+        },
+        "code-from-image": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '79b2564765b0ad41d339f77d3c172c30'}\", 'context_id': '518d4ad7-1e40-4e8f-8b6b-8cbec3a76134', 'status': 'failed'}"
+        },
+        "compile-compcert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'bb5b7e3c17f50d7102bf9b01365d8a06'}\", 'context_id': '3bd1d993-8f92-4458-b10d-0ddfb6a4cb15', 'status': 'failed'}"
+        },
+        "configure-git-webserver": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '7dd31d2eaadd7a1a4c72ad3ca1fc5b57'}\", 'context_id': '94a56ec1-6a14-4a66-b555-7d33e4f0db1d', 'status': 'failed'}"
+        },
+        "constraints-scheduling": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '6dc35f3721c29d6bad982a33c3b7320c'}\", 'context_id': '2f81ab1e-531b-49c2-8e7a-e7cec3920950', 'status': 'failed'}"
+        },
+        "count-dataset-tokens": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'c4f5e67678535c590e34792e0830bd3f'}\", 'context_id': '4da96bd3-cb4e-4d1c-b9e8-d0adfc33bdc4', 'status': 'failed'}"
+        },
+        "crack-7z-hash": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '023056577f1485063a09d471361b3a36'}\", 'context_id': '5a538e35-3afa-41f0-898f-0751c34fcc0a', 'status': 'failed'}"
+        },
+        "custom-memory-heap-crash": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '4d2695342550e4762c99476ef7e4e37e'}\", 'context_id': 'fafb67f1-3588-4da3-a65b-f17b6f2725d0', 'status': 'failed'}"
+        },
+        "db-wal-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'a0e8fe2c6fb319604bc8ef1f30b9972d'}\", 'context_id': '85db9734-f206-45a2-b614-08c089f93df6', 'status': 'failed'}"
+        },
+        "distribution-search": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'a4375f01f332c123f0668e5070e4244e'}\", 'context_id': '7cb8fcfe-29c8-4a90-ab8e-61f22bcfb0c7', 'status': 'failed'}"
+        },
+        "dna-assembly": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '89759b5d990a2067f1dfaa7a4939f162'}\", 'context_id': '4975deb9-c94b-43b6-8544-366ecc6b530d', 'status': 'failed'}"
+        },
+        "dna-insert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '54d71a3f1b6b797d681c5e3f5122bd6c'}\", 'context_id': '3497fa2b-4751-4aa9-974f-8eb794fe9e73', 'status': 'failed'}"
+        },
+        "extract-elf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '65cc363f7763227ec5fa206d76a1093d'}\", 'context_id': '0b7c06a8-0305-4c33-a3c4-eff0e8b18d7d', 'status': 'failed'}"
+        },
+        "extract-moves-from-video": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'e3be014cca5aca7076711e68d7ecee66'}\", 'context_id': '35d37d0f-0fd0-4b9a-9cb6-6ec5fc25c27f', 'status': 'failed'}"
+        },
+        "feal-differential-cryptanalysis": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'ee6fc748df028470f7199d289fa73304'}\", 'context_id': '078f7526-1ee0-4b9c-af7e-f8c8a479248f', 'status': 'failed'}"
+        },
+        "feal-linear-cryptanalysis": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'ec9b9765d224d50daa8e937fabbf2042'}\", 'context_id': '024d1fbf-c0ae-4228-a330-b7de5071eb0e', 'status': 'failed'}"
+        },
+        "filter-js-from-html": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '9d8f2578a2498362e893866182181144'}\", 'context_id': 'dffbf168-f04e-46e4-b50e-e8ab2aa211bd', 'status': 'failed'}"
+        },
+        "financial-document-processor": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'ad3831528d5919333a423832eff47839'}\", 'context_id': 'a404b562-7218-4a11-82e2-ed180bc1be82', 'status': 'failed'}"
+        },
+        "fix-code-vulnerability": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '45a21d64a07af6489a95fc70f09e9419'}\", 'context_id': 'caee705f-4eb2-4747-a5c9-c2180f3983e4', 'status': 'failed'}"
+        },
+        "fix-git": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '615be362b1ab761a160fed5c13f96a55'}\", 'context_id': '87726420-228e-45b4-8f08-17d1bcf9613d', 'status': 'failed'}"
+        },
+        "fix-ocaml-gc": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '5ec3ee41a6ce1f49e9f7f1244fbad93c'}\", 'context_id': '69b9d7c3-feef-4622-a6f7-0535787cb91f', 'status': 'failed'}"
+        },
+        "gcode-to-text": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'e97e2b35d0a61102e478990d1ab8cb5a'}\", 'context_id': '6723e389-dedd-41c4-8e7e-1396f4b7cf4f', 'status': 'failed'}"
+        },
+        "git-leak-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '6ef1f8605f842a4291411d13456c597d'}\", 'context_id': '8260f1ff-4f9f-4ab3-b983-c390c5df8099', 'status': 'failed'}"
+        },
+        "git-multibranch": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '8311bd069a633c7b44cbf057e4420f50'}\", 'context_id': 'fea0f13c-e5fb-4e1e-9ec2-1c824e72e40e', 'status': 'failed'}"
+        },
+        "gpt2-codegolf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '37d5636e4953692f391d3e4409d92805'}\", 'context_id': '347e7505-ca49-48cb-b52e-12b670d8a2a5', 'status': 'failed'}"
+        },
+        "headless-terminal": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'c51cac481a6bdd34f25f3c2a20612c45'}\", 'context_id': '5b58bcb2-8a1d-4d11-b3b3-85ad0daa42d5', 'status': 'failed'}"
+        },
+        "hf-model-inference": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'd0a4f371e4fde3435b140c6b10305859'}\", 'context_id': '71ba01ff-65a1-43aa-869a-143ccfeb4d8e', 'status': 'failed'}"
+        },
+        "install-windows-3.11": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'bda2c33c1151225aa3b82b02f4856101'}\", 'context_id': 'b2fa0f7c-947f-45ff-b66d-165a28295ae0', 'status': 'failed'}"
+        },
+        "kv-store-grpc": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '32fc1e7e0bc12534c3b03d770c75121a'}\", 'context_id': 'ea3d0ae8-6121-4fb5-bfb1-1330f2bc1450', 'status': 'failed'}"
+        },
+        "large-scale-text-editing": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'e885e179ef2e1a1e64485902ddf05108'}\", 'context_id': '3ba20443-81d1-489a-bae9-06a3f2a83f89', 'status': 'failed'}"
+        },
+        "largest-eigenval": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '9d84e63f2d357571bf92903809346816'}\", 'context_id': '268449ef-76a9-4b0c-ae5f-63ddb08ab7cf', 'status': 'failed'}"
+        },
+        "llm-inference-batching-scheduler": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '6722a7623d930465886a2b1e05f9e469'}\", 'context_id': '57c17fd4-3450-46a9-8303-394b6a9e0339', 'status': 'failed'}"
+        },
+        "log-summary-date-ranges": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '7280be7775aaf8576c477031772a2651'}\", 'context_id': '807bd419-6752-4b1e-be85-d362c976a6a5', 'status': 'failed'}"
+        },
+        "mailman": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'fb34b864d26dcc5fc32859661142770d'}\", 'context_id': '7d568d0a-e897-493f-8037-8ab99b17c163', 'status': 'failed'}"
+        },
+        "make-doom-for-mips": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'da50826544c0a36f165d322075c0fb0f'}\", 'context_id': '73514880-aa4e-4ba2-aa32-e7d1b068dc7f', 'status': 'failed'}"
+        },
+        "make-mips-interpreter": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '59d10d6be6b7c304f5ec984ad235a81e'}\", 'context_id': '0e8d4f47-876d-46cf-ae11-cf2848295489', 'status': 'failed'}"
+        },
+        "mcmc-sampling-stan": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '841d9e230c263b424315c0274d4abe48'}\", 'context_id': '6d8930db-17d7-45bd-8cdb-1713923d4904', 'status': 'failed'}"
+        },
+        "merge-diff-arc-agi-task": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '7096fe0562e5e557a7bd85572421cd13'}\", 'context_id': '101193a9-48f1-4a38-9c1d-cff4b3f7c0a2', 'status': 'failed'}"
+        },
+        "model-extraction-relu-logits": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'babb2310363ef67c38f1b64506c98d32'}\", 'context_id': '543fcd1e-197d-4b95-9294-64359b247cf3', 'status': 'failed'}"
+        },
+        "modernize-scientific-stack": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'fbee0057366ba75644ffa414250ca577'}\", 'context_id': 'b6c7cb71-aa96-42b4-8d02-fa9d82b62aba', 'status': 'failed'}"
+        },
+        "mteb-leaderboard": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'ca8ab3062e2e782a97115d3ddfb49a55'}\", 'context_id': '3e32c87f-fcb5-4e90-9c32-84c87304c96f', 'status': 'failed'}"
+        },
+        "mteb-retrieve": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '7cc30266d59c6f263535233616b5ee54'}\", 'context_id': '37e2ba13-c4ba-456f-905b-569f2e239bbf', 'status': 'failed'}"
+        },
+        "multi-source-data-merger": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '9e04f641ddfbf4610c610344259f853f'}\", 'context_id': '6d37b7a7-024a-496d-a378-5b6fdf6ad1e6', 'status': 'failed'}"
+        },
+        "nginx-request-logging": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '34b6281d8856f46b7f8ec17123e4e17f'}\", 'context_id': 'dfa0373b-e5f7-4c9e-a7c8-d9d93c7dbb44', 'status': 'failed'}"
+        },
+        "openssl-selfsigned-cert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '6ff5221e5a438c568e94dd7396ca3b17'}\", 'context_id': '388272f7-6d07-45bc-bb3a-8476ca4bbaae', 'status': 'failed'}"
+        },
+        "overfull-hbox": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'b6257c63c93ba278bb7ba45ff0de9c43'}\", 'context_id': '1b2cd195-f136-4f39-8500-d589e3a23f88', 'status': 'failed'}"
+        },
+        "password-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '0227572c4b596c117902bf3800ca8c4e'}\", 'context_id': '8134d617-9caf-433c-8e05-53b6f27d6b76', 'status': 'failed'}"
+        },
+        "path-tracing": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '6a75715124e1ba77cfd2ec6823f21c12'}\", 'context_id': 'dced0bea-acc7-47a3-bf10-5688cebbb5c2', 'status': 'failed'}"
+        },
+        "path-tracing-reverse": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '2bc9f840c4ab095bf28efe0596296902'}\", 'context_id': '23c737ea-fa80-4f28-ae89-d8e6ffb8811c', 'status': 'failed'}"
+        },
+        "polyglot-c-py": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '6479ab3998aa6f7ed9b70a7359d89131'}\", 'context_id': '2acef9d4-42d7-440f-b8c9-f19dd1c3f4c0', 'status': 'failed'}"
+        },
+        "polyglot-rust-c": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'f246910b8251480664b55c1c75428e0e'}\", 'context_id': '49859c65-75c1-481e-bf39-fad6ef9131ff', 'status': 'failed'}"
+        },
+        "portfolio-optimization": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '02df127e2f20121170fdec637628d304'}\", 'context_id': 'c15921d8-b499-4d5b-a882-f6de8aba49cf', 'status': 'failed'}"
+        },
+        "protein-assembly": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': 'a4225a572eb5d84e336a946c5b43db08'}\", 'context_id': '29f1e5a1-1e66-4b20-af58-a809281c8c16', 'status': 'failed'}"
+        },
+        "prove-plus-comm": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '1a640b0c53fd355ef748a24eeeffd610'}\", 'context_id': '59808925-8738-4194-bdbb-a33d55655f2e', 'status': 'failed'}"
+        },
+        "pypi-server": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 429 - {'message': 'API rate limit exceeded', 'request_id': '183bab657ef9f40a1b8d7b09586e7047'}\", 'context_id': 'db9f6109-5a99-4f70-bb6e-8e9c07193e16', 'status': 'failed'}"
+        },
+        "pytorch-model-cli": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 400 - {\\'error\\': {\\'message\\': \"This model\\'s maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)\", \\'type\\': \\'BadRequestError\\', \\'param\\': \\'input_tokens\\', \\'code\\': 400}}', 'context_id': '0e9b1653-6c2c-4364-b34f-b1239c9f4044', 'status': 'failed'}"
+        },
+        "pytorch-model-recovery": {
+          "reward": 0.0
+        },
+        "qemu-alpine-ssh": {
+          "reward": 0.0
+        },
+        "qemu-startup": {
+          "reward": 0.0
+        },
+        "query-optimize": {
+          "error": "Command timed out after 30 seconds"
+        },
+        "raman-fitting": {
+          "reward": 0.0
+        },
+        "regex-chess": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLM response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"python -c \\\\\"import json; import re; with open(\\'/app/re.json\\', \\'w\\') as f: json.dump([(r\\'w\\', \\'b\\'), (r\\'b\\', \\'w\\')], f)\\\\\"\"}\\n{\"kind\": \"exec_request\", \"command\": \"pip install -y python-chess regex\"}\\n{\"kind\": \"exec_request\", \"command\": \"python -c \\\\\"import os; print(os.path.getsize(\\'/app/re.json\\'))\\\\\"\"}\\n{\"kind\": \"exec_request\", \"command\": \"python -c \\\\\"import json; import chess; def all_legal_next_positions(fen): fen = chess.parse(fen); fen = fen.mirror(); legal_moves = fen.legal_moves; return [fen.san(m) for m in legal_moves]; return all_legal_next_positions(\\'rnb1k1nr/p2p1ppp/3B4/1p1NPN1P/6P1/3P1Q2/P1P5/q4Kb1 w kq - 0 1\\')\\\\\"\"}\\n{\"kind\": \"exec_request\", \"command\": \"python -c \\\\\"import json; import chess; def all_legal_next_positions(fen): fen = chess.parse(fen); fen = fen.mirror(); legal_moves = fen.legal_moves; return [fen.san(m) for m in legal_moves]; return \\'\\\\\\\\n\\'.join(all_legal_next_positions(\\'rnb1k1nr/p2p1ppp/3B4/1p1NPN1P/6P1/3P1Q2/P1P5/q4Kb1 w kq - 0 1\\').split(\\'\\\\\\\\n\\')[:2])\\\\\"\"}\\n{\"kind\": \"final\"}', 'context_id': '8e02511f-725b-4548-8ba5-f8a91ee1f11e', 'status': 'failed'}"
+        },
+        "regex-log": {
+          "reward": 0.0
+        },
+        "reshard-c4-data": {
+          "reward": 0.0
+        },
+        "rstan-to-pystan": {
+          "reward": 0.0
+        },
+        "sam-cell-seg": {
+          "reward": 0.0
+        },
+        "sanitize-git-repo": {
+          "reward": 0.0
+        },
+        "schemelike-metacircular-eval": {
+          "reward": 0.0
+        },
+        "sparql-university": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLM response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"echo \\'PREFIX owl: <http://www.w3.org/2002/07/owl#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> PREFIX foaf: <http://xmlns.com/foaf/0.1/> PREFIX : <http://example.org/university#> SELECT ?professorName ?countries WHERE { ?professor a foaf:Person ; owl:sameAs ?universityProfessor ; :isProfessor true . ?professor foaf:worksIn ?department . ?department :locatedIn ?university . ?university :country ?country . ?university :foundedDate ?foundedDate . FILTER ( ?foundedDate > xsd:date(\\\\\"2025-08-16\\\\\") ) . ?department :hasMoreThanTenStudents ?class . ?class :taughtBy ?professor . ?professor foaf:name ?professorName . FILTER ( ?country IN ( \\\\\"AT\\\\\", \\\\\"BE\\\\\", \\\\\"BG\\\\\", \\\\\"CY\\\\\", \\\\\"CZ\\\\\", \\\\\"DE\\\\\", \\\\\"DK\\\\\", \\\\\"EE\\\\\", \\\\\"ES\\\\\", \\\\\"FI\\\\\", \\\\\"FR\\\\\", \\\\\"HR\\\\\", \\\\\"HU\\\\\", \\\\\"IE\\\\\", \\\\\"IT\\\\\", \\\\\"LT\\\\\", \\\\\"LU\\\\\", \\\\\"LV\\\\\", \\\\\"MT\\\\\", \\\\\"NL\\\\\", \\\\\"PL\\\\\", \\\\\"PT\\\\\", \\\\\"RO\\\\\", \\\\\"SE\\\\\", \\\\\"SI\\\\\", \\\\\"SK\\\\\" ) ) BIND( GROUP_CONCAT( DISTINCT ?country; SEPARATOR=\", \" ) AS ?countries ) }\\' > /app/solution.sparql\" , \"timeout\": 30}', 'context_id': '1686205f-894d-4df2-b7eb-d235a73372f0', 'status': 'failed'}"
+        },
+        "sqlite-db-truncate": {
+          "reward": 0.0
+        },
+        "sqlite-with-gcov": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 400 - {\\'error\\': {\\'message\\': \"This model\\'s maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)\", \\'type\\': \\'BadRequestError\\', \\'param\\': \\'input_tokens\\', \\'code\\': 400}}', 'context_id': 'bf406ddf-07bc-4a0e-aff4-5baa0d934a71', 'status': 'failed'}"
+        },
+        "torch-pipeline-parallelism": {
+          "reward": 0.0
+        },
+        "torch-tensor-parallelism": {
+          "reward": 0.0
+        },
+        "train-fasttext": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLM response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"python -c \\'import fasttext; fasttext.train_supervised(\"data/*.txt\", model=\"cbow\", dim=100, epoch=30, loss=\"softmax\", word_ngrams=2, verbose=2, lr=0.5, thread=10, bucket=200000, min_count=5, minn=3, maxn=6, t=0.0001, quiet=True, loss_function=\"cross-entropy\", model=\"skipgram\", input=\"supervised\", word_vectors=\"word2vec\", word_vectors_dim=100, word_vectors_trainable=True, word_vectors_file=\"\")\\' && [ $(ls -lh /app/model.bin | grep -o \\'.*\\\\.[0-9]\\\\{2\\\\}M\\' | wc -l) -eq 1 ]\" , \"timeout\": 30}', 'context_id': 'd76d9408-6c1c-4b9e-a6b6-6ef7cb8022a7', 'status': 'failed'}"
+        },
+        "tune-mjcf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLM response is not valid JSON: The xmllint command is used to parse the XML file, but it doesn\\'t modify it. We need to use the sed command to replace the time values. Here\\'s another attempt:\\n\\n{\"kind\": \"exec_request\", \"command\": \"sed -i \\'s/<time>\\\\\\\\d+.<\\\\\\\\d+/<time>0.4/\\' /app/model_ref.xml\", \"timeout\": 30}', 'context_id': '5cd7a826-37bb-44b1-ad6c-d2b3fd1b22d6', 'status': 'failed'}"
+        },
+        "video-processing": {
+          "reward": 0.0
+        },
+        "vulnerable-secret": {
+          "reward": 0.0
+        },
+        "winning-avg-corewars": {
+          "reward": 0.0
+        },
+        "write-compressor": {
+          "reward": 0.0
+        }
+      }
+    }
+  ]
+}
