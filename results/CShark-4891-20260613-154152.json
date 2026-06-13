@@ -1,0 +1,388 @@
+{
+  "status": "completed",
+  "participants": {
+    "green": "019d87ef-2c6d-7091-8d93-827799c2ade3",
+    "agent": "019e8472-e017-72f0-9ba9-8c5d20e02d32"
+  },
+  "results": [
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "adaptive-rejection-sampler": {
+          "error": "Command timed out after 30 seconds"
+        },
+        "crack-7z-hash": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '7ec408ad-87f7-4925-aab3-8a9028327bb3', 'status': 'failed'}"
+        },
+        "git-leak-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '40c8c6c9-7394-4867-9ea6-652e1e459627', 'status': 'failed'}"
+        },
+        "model-extraction-relu-logits": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'e1045897-7568-4fab-b442-4bead8878bb0', 'status': 'failed'}"
+        },
+        "pypi-server": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '0a2813a4-3dcf-4ce5-ab48-36f8c5a38a89', 'status': 'failed'}"
+        },
+        "sqlite-with-gcov": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "bn-fit-modify": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '298c62f6-d50e-48a7-a1bf-9943000bf394', 'status': 'failed'}"
+        },
+        "custom-memory-heap-crash": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'b80b8dc7-4b19-4443-bf2c-1d67e8b3beb8', 'status': 'failed'}"
+        },
+        "git-multibranch": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '17e92d30-41cd-4ca3-b58b-74057d19c081', 'status': 'failed'}"
+        },
+        "modernize-scientific-stack": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'f4907bae-ba8e-4599-88ee-97111eabbb89', 'status': 'failed'}"
+        },
+        "pytorch-model-cli": {
+          "reward": 0.0
+        },
+        "torch-pipeline-parallelism": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "break-filter-js-from-html": {
+          "reward": 0.0
+        },
+        "db-wal-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'dc67c6fe-e077-4c9d-9568-787c4bb80a49', 'status': 'failed'}"
+        },
+        "gpt2-codegolf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '152b1ed4-dfa1-4817-85c4-d521f4c9a274', 'status': 'failed'}"
+        },
+        "mteb-leaderboard": {
+          "reward": 0.0
+        },
+        "pytorch-model-recovery": {
+          "reward": 0.0
+        },
+        "torch-tensor-parallelism": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-cython-ext": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'e8bef1d0-a4c4-46b8-a32a-efa45201ec3f', 'status': 'failed'}"
+        },
+        "distribution-search": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'ad747f3c-5310-48c7-b72a-88d40b10aa8c', 'status': 'failed'}"
+        },
+        "headless-terminal": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '9289aa0b-840f-44c5-8379-8fd4def51182', 'status': 'failed'}"
+        },
+        "mteb-retrieve": {
+          "reward": 0.0
+        },
+        "qemu-alpine-ssh": {
+          "reward": 0.0
+        },
+        "train-fasttext": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-pmars": {
+          "reward": 0.0
+        },
+        "dna-assembly": {
+          "reward": 0.0
+        },
+        "hf-model-inference": {
+          "reward": 0.0
+        },
+        "multi-source-data-merger": {
+          "reward": 0.0
+        },
+        "qemu-startup": {
+          "reward": 0.0
+        },
+        "tune-mjcf": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-pov-ray": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'ba7b2990-0a05-4a7d-a270-f266518fe4fc', 'status': 'failed'}"
+        },
+        "dna-insert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '711bdd2d-aaac-4d83-99ed-bafdc30bde9a', 'status': 'failed'}"
+        },
+        "install-windows-3.11": {
+          "reward": 0.0
+        },
+        "nginx-request-logging": {
+          "reward": 0.0
+        },
+        "query-optimize": {
+          "reward": 0.0
+        },
+        "video-processing": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "caffe-cifar-10": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '5cf5783f-ddc6-43b6-93e1-7412c81c0a2e', 'status': 'failed'}"
+        },
+        "extract-elf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '43eb8b96-cfad-4432-b7d9-2bf8b9ab8b9c', 'status': 'failed'}"
+        },
+        "kv-store-grpc": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'b17832ca-ae0a-4475-90d9-36a417cf2d5a', 'status': 'failed'}"
+        },
+        "openssl-selfsigned-cert": {
+          "reward": 0.0
+        },
+        "raman-fitting": {
+          "reward": 0.0
+        },
+        "vulnerable-secret": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "cancel-async-tasks": {
+          "reward": 0.0
+        },
+        "extract-moves-from-video": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'a0287f46-4a19-4205-a1f9-a48d795dd5f2', 'status': 'failed'}"
+        },
+        "large-scale-text-editing": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'e3a47a55-d04c-4d07-a0fe-56a9a3dfeedd', 'status': 'failed'}"
+        },
+        "overfull-hbox": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '242b0ed8-5bfe-4fc8-9990-636e06217dd5', 'status': 'failed'}"
+        },
+        "regex-chess": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'cdbba519-8e7b-4247-8831-e63e7747a322', 'status': 'failed'}"
+        },
+        "winning-avg-corewars": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '0851af51-7d61-4310-acbf-86b1ea952cb6', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "chess-best-move": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'eaa7cd82-ea71-451a-90cc-c1ce8ac874a4', 'status': 'failed'}"
+        },
+        "feal-differential-cryptanalysis": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '8717eaf4-bcc0-457b-b5dc-75ea648299b7', 'status': 'failed'}"
+        },
+        "largest-eigenval": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '67f16400-5cf7-4be6-96e6-9680c0b8e605', 'status': 'failed'}"
+        },
+        "password-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'ba02a07b-7183-4baa-aa8d-def5c7c0ac4c', 'status': 'failed'}"
+        },
+        "regex-log": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'b3a341f6-47ce-4e7f-b835-a4ac5822c351', 'status': 'failed'}"
+        },
+        "write-compressor": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "circuit-fibsqrt": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 400 - {\\'error\\': {\\'message\\': \"This model\\'s maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)\", \\'type\\': \\'BadRequestError\\', \\'param\\': \\'input_tokens\\', \\'code\\': 400}}', 'context_id': '5eb480c1-2c90-498c-9acb-6f1a687154e3', 'status': 'failed'}"
+        },
+        "feal-linear-cryptanalysis": {
+          "reward": 0.0
+        },
+        "llm-inference-batching-scheduler": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'fd946162-338b-4f02-b0d6-9980cf3b70b2', 'status': 'failed'}"
+        },
+        "path-tracing": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '0b4575c5-f5f1-4988-95a3-dab06b3ba375', 'status': 'failed'}"
+        },
+        "reshard-c4-data": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '6a39cf93-9375-4f4b-8dc2-c26e71ff5ecf', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "cobol-modernization": {
+          "reward": 0.0
+        },
+        "filter-js-from-html": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '9e5f3d33-040d-4469-992b-7a51df73f4c4', 'status': 'failed'}"
+        },
+        "log-summary-date-ranges": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '12087bf8-3ed8-4b7d-9f6a-556d39fd1c81', 'status': 'failed'}"
+        },
+        "path-tracing-reverse": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'a7a884e1-1865-439d-8f8c-4030e054acdc', 'status': 'failed'}"
+        },
+        "rstan-to-pystan": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '20ff78e7-39c2-4b33-baa7-189bba444a2c', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "code-from-image": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '7f5a39c4-fa0d-47e2-8493-a735d0fc684e', 'status': 'failed'}"
+        },
+        "financial-document-processor": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '7ce13716-1e86-450f-80bb-c61304e60c7b', 'status': 'failed'}"
+        },
+        "mailman": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'a4c362d7-dbdb-48a7-a955-b506eb22f8e2', 'status': 'failed'}"
+        },
+        "polyglot-c-py": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '7516bf64-54bc-43e2-ad53-71e8ef1e3dcb', 'status': 'failed'}"
+        },
+        "sam-cell-seg": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '48776954-f182-4491-877c-0d946c27d68e', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "compile-compcert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'f105fb0f-c4b7-4684-9e60-b269ec240824', 'status': 'failed'}"
+        },
+        "fix-code-vulnerability": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'cb653815-1691-4651-b90f-1bc8c7626636', 'status': 'failed'}"
+        },
+        "make-doom-for-mips": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '91a2a823-8f4b-4e08-a359-43f4ce2a93b2', 'status': 'failed'}"
+        },
+        "polyglot-rust-c": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'da7bc1fa-9780-40dd-af40-442a214f35ea', 'status': 'failed'}"
+        },
+        "sanitize-git-repo": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'dd47217f-1081-4869-8843-510a27601553', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "configure-git-webserver": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '1b99d627-b9ef-4648-8bb9-6645c8789a79', 'status': 'failed'}"
+        },
+        "fix-git": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '492dedbc-1274-43ed-8138-9c5c79572581', 'status': 'failed'}"
+        },
+        "make-mips-interpreter": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'b0125e7c-d355-404c-8cfd-bda417145e1a', 'status': 'failed'}"
+        },
+        "portfolio-optimization": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'c0560080-8d6a-42a9-8b97-54aa49f8a1c2', 'status': 'failed'}"
+        },
+        "schemelike-metacircular-eval": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "constraints-scheduling": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"python -c \\'import icalendar; import datetime; import glob; import os; # Read calendars from files alice_cal = icalendar.Calendar.from_ical(open(os.path.join(\\\\\"/app\\\\\", \\\\\"alice_calendar.ics\\\\\")).read()); bob_cal = icalendar.Calendar.from_ical(open(os.path.join(\\\\\"/app\\\\\", \\\\\"bob_calendar.ics\\\\\")).read()); carol_cal = icalendar.Calendar.from_ical(open(os.path.join(\\\\\"/app\\\\\", \\\\\"carol_calendar.ics\\\\\")).read()); # Define date range and time slots date_range = [datetime.datetime(2024, 1, 15, 9), datetime.datetime(2024, 1, 19, 18)]; time_slots = [datetime.datetime(2024, 1, 15, 9, 0), datetime.datetime(2024, 1, 15, 17, 0), datetime.datetime(2024, 1, 16, 9, 0), datetime.datetime(2024, 1, 16, 17, 0), datetime.datetime(2024, 1, 17, 9, 0), datetime.datetime(2024, 1, 17, 17, 0), datetime.datetime(2024, 1, 18, 9, 0), datetime.datetime(2024, 1, 18, 17, 0), datetime.datetime(2024, 1, 19, 9, 0), datetime.datetime(2024, 1, 19, 17, 0)]; # Filter out time slots that conflict with existing calendar entries valid_time_slots = []; for slot in time_slots: for cal in [alice_cal, bob_cal, carol_cal]: for event in cal.walk(\\'vevent\\'): start = event.decoded(\\'dtstart\\').date(); end = event.decoded(\\'dtend\\').date(); if start <= slot.date() <= end: continue; # Filter out time slots that violate availability constraints if slot.hour < 9 or slot.hour > 17 or (slot.hour == 12 and slot.minute >= 0) or (slot.hour == 17 and slot.minute > 0) or (slot.hour == 18 and slot.minute >= 15): continue; # Filter out time slots that violate Carol\\'s Monday avoidance if slot.date().weekday() == 0: continue; # Find the earliest valid time slot that satisfies all hard constraints valid_time_slots = [slot for slot in time_slots if slot not in [e.decoded(\\'dtstart\\').time() for e in alice_cal.walk(\\'vevent\\') + bob_cal.walk(\\'vevent\\') + carol_cal.walk(\\'vevent\\')]]; valid_time_slots.sort(); # Filter out time slots that violate Carol\\'s Monday avoidance or Alice\\'s morning preference if slot.date().weekday() == 0 or (slot.hour < 12 and slot.hour != 9): continue; # Find the earliest valid time slot that satisfies all hard constraints and Carol\\'s Monday avoidance valid_time_slots = [slot for slot in time_slots if slot not in [e.decoded(\\'dtstart\\').time() for e in alice_cal.walk(\\'vevent\\') + bob_cal.walk(\\'vevent\\') + carol_cal.walk(\\'vevent\\')] and slot.date().weekday() != 0]; valid_time_slots.sort(); # Find the earliest valid time slot that satisfies all hard constraints and Carol\\'s Monday avoidance valid_time_slot = min(valid_time_slots); # Create the output ICS file with the scheduled meeting cal = icalendar.Calendar(); cal.add(\\'prodid\\', \\'-//Your Name//example.com//EN\\'); cal.add(\\'version\\', \\'2.0\\'); event = icalendar.Event(); event.add(\\'summary\\', \\'Team Planning Meeting\\'); event.add(\\'location\\', \\'Online Meeting\\'); event.add(\\'dtstart\\', valid_time_slot); event.add(\\'dtend\\', valid_time_slot + datetime.timedelta(hours=1)); event.add(\\'attendee\\', \\'mailto:alice@example.com\\'); event.add(\\'attendee\\', \\'mailto:bob@example.com\\'); event.add(\\'attendee\\', \\'mailto:carol@example.com\\'); cal.add_component(event); open(os.path.join(\"/app\", \"meeting_scheduled.ics\"), \"w\").write(cal.to_ical());\\'\"', 'context_id': 'e2ab9b6c-f32d-4943-9e4c-8e76c44ba32e', 'status': 'failed'}"
+        },
+        "fix-ocaml-gc": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '655dfdf5-1fd2-4141-9c7c-ed4d3f9e8bdf', 'status': 'failed'}"
+        },
+        "mcmc-sampling-stan": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '4190c509-9208-4cfa-a61a-4d8586914152', 'status': 'failed'}"
+        },
+        "protein-assembly": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '12077af4-b9c6-49a4-9670-3a924ff1b1c6', 'status': 'failed'}"
+        },
+        "sparql-university": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'd9d43cdc-d351-4d67-ae24-7424de2c9f36', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "count-dataset-tokens": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '12470a39-a32a-48a4-93e7-febd2a90e1de', 'status': 'failed'}"
+        },
+        "gcode-to-text": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '35facb0c-bf07-4d16-89b0-b7f383e5ac78', 'status': 'failed'}"
+        },
+        "merge-diff-arc-agi-task": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '10a67d34-08f6-4b41-a111-df459754649f', 'status': 'failed'}"
+        },
+        "prove-plus-comm": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '22354c48-0501-41b7-9dfc-aa9e6175bc03', 'status': 'failed'}"
+        },
+        "sqlite-db-truncate": {
+          "reward": 0.0
+        }
+      }
+    }
+  ]
+}
