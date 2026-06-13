@@ -1,0 +1,283 @@
+{
+  "status": "completed",
+  "participants": {
+    "green": "019d87ef-2c6d-7091-8d93-827799c2ade3",
+    "agent": "019e8472-e017-72f0-9ba9-8c5d20e02d32"
+  },
+  "results": [
+    {
+      "score": 0.0,
+      "max_score": 89,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "adaptive-rejection-sampler": {
+          "reward": 0.0
+        },
+        "bn-fit-modify": {
+          "reward": 0.0
+        },
+        "break-filter-js-from-html": {
+          "reward": 0.0
+        },
+        "build-cython-ext": {
+          "reward": 0.0
+        },
+        "build-pmars": {
+          "reward": 0.0
+        },
+        "build-pov-ray": {
+          "reward": 0.0
+        },
+        "caffe-cifar-10": {
+          "reward": 0.0
+        },
+        "cancel-async-tasks": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"python -c \\'import os; print(\"Task completed successfully\");\\' \", \"timeout\": 30}', 'context_id': '0c2f347a-6e6d-4ba5-b0c3-2ff20055673d', 'status': 'failed'}"
+        },
+        "chess-best-move": {
+          "reward": 0.0
+        },
+        "circuit-fibsqrt": {
+          "reward": 0.0
+        },
+        "cobol-modernization": {
+          "reward": 0.0
+        },
+        "code-from-image": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: The issue here is that we\\'re trying to read and print the hash from the file twice. The correct way to do this is to write the hash to the file, then read and print it.\\n\\nHowever, the \\'open\\' function is used twice, which is not the correct way to use it. We should assign the result of the first \\'open\\' function to a variable, and then use that variable to write the hash.\\n\\n{\"kind\": \"exec_request\", \"command\": \"python -c \\\\\"import hashlib; image = open(\\'/app/code.png\\', \\'rb\\').read(); hash = hashlib.md5(image).hexdigest(); f = open(\\'/app/output.txt\\', \\'w\\'); f.write(hash); f.close(); print(open(\\'/app/output.txt\\', \\'r\\').read(), flush=True)\\\\\"\", \"timeout\": 30}', 'context_id': 'bdad7515-6658-413c-bcfa-f3076f3bd2a7', 'status': 'failed'}"
+        },
+        "compile-compcert": {
+          "reward": 0.0
+        },
+        "configure-git-webserver": {
+          "reward": 0.0
+        },
+        "constraints-scheduling": {
+          "reward": 0.0
+        },
+        "count-dataset-tokens": {
+          "error": "Command timed out after 30 seconds"
+        },
+        "crack-7z-hash": {
+          "error": "Command timed out after 30 seconds"
+        },
+        "custom-memory-heap-crash": {
+          "reward": 0.0
+        },
+        "db-wal-recovery": {
+          "error": "Command timed out after 30 seconds"
+        },
+        "distribution-search": {
+          "reward": 0.0
+        },
+        "dna-assembly": {
+          "reward": 0.0
+        },
+        "dna-insert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 400 - {\\'error\\': {\\'message\\': \"This model\\'s maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)\", \\'type\\': \\'BadRequestError\\', \\'param\\': \\'input_tokens\\', \\'code\\': 400}}', 'context_id': 'c7b40e38-3ae0-46b5-98a5-58cec469a183', 'status': 'failed'}"
+        },
+        "extract-elf": {
+          "error": "Command timed out after 30 seconds"
+        },
+        "extract-moves-from-video": {
+          "error": "Command timed out after 30 seconds"
+        },
+        "feal-differential-cryptanalysis": {
+          "reward": 0.0
+        },
+        "feal-linear-cryptanalysis": {
+          "reward": 0.0
+        },
+        "filter-js-from-html": {
+          "reward": 0.0
+        },
+        "financial-document-processor": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 400 - {\\'error\\': {\\'message\\': \"This model\\'s maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)\", \\'type\\': \\'BadRequestError\\', \\'param\\': \\'input_tokens\\', \\'code\\': 400}}', 'context_id': '4cc96875-a5c0-4af9-8493-35fdcf734eac', 'status': 'failed'}"
+        },
+        "fix-code-vulnerability": {
+          "reward": 0.0
+        },
+        "fix-git": {
+          "reward": 0.0
+        },
+        "fix-ocaml-gc": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: command in exec request has invalid shell syntax: \"bash: line 1: syntax error near unexpected token `(\\'\\\\nbash: line 1: `git --no-pager show --name-status --pretty=format:%Cred%h %Creset%d %Cgreen(%aN) %Creset%Cblue(%f)%Creset: %Creset%s\\'\" — command was: \\'git --no-pager show --name-status --pretty=format:%Cred%h %Creset%d %Cgreen(%aN) %Creset%Cblue(%f)%Creset: %Creset%s\\'', 'context_id': 'a4b59b50-5f78-4d4a-950d-3da83a3febc0', 'status': 'failed'}"
+        },
+        "gcode-to-text": {
+          "reward": 0.0
+        },
+        "git-leak-recovery": {
+          "reward": 0.0
+        },
+        "git-multibranch": {
+          "reward": 0.0
+        },
+        "gpt2-codegolf": {
+          "reward": 0.0
+        },
+        "headless-terminal": {
+          "reward": 0.0
+        },
+        "hf-model-inference": {
+          "reward": 0.0
+        },
+        "install-windows-3.11": {
+          "reward": 0.0
+        },
+        "kv-store-grpc": {
+          "reward": 0.0
+        },
+        "large-scale-text-editing": {
+          "reward": 0.0
+        },
+        "largest-eigenval": {
+          "reward": 0.0
+        },
+        "llm-inference-batching-scheduler": {
+          "reward": 0.0
+        },
+        "log-summary-date-ranges": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 400 - {\\'error\\': {\\'message\\': \"This model\\'s maximum context length is 131072 tokens. However, you requested 0 output tokens and your prompt contains at least 131073 input tokens, for a total of at least 131073 tokens. Please reduce the length of the input prompt or the number of requested output tokens. (parameter=input_tokens, value=131073)\", \\'type\\': \\'BadRequestError\\', \\'param\\': \\'input_tokens\\', \\'code\\': 400}}', 'context_id': 'f63ee6bc-2e89-4bea-a8e6-de9184ee59ab', 'status': 'failed'}"
+        },
+        "mailman": {
+          "reward": 0.0
+        },
+        "make-doom-for-mips": {
+          "reward": 0.0
+        },
+        "make-mips-interpreter": {
+          "error": "Command timed out after 30 seconds"
+        },
+        "mcmc-sampling-stan": {
+          "reward": 0.0
+        },
+        "merge-diff-arc-agi-task": {
+          "reward": 0.0
+        },
+        "model-extraction-relu-logits": {
+          "reward": 0.0
+        },
+        "modernize-scientific-stack": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"python -c \"import pathlib; import pandas as pd; data = pd.read_csv(\\'/app/climate_analyzer/sample_data/climate_data.csv\\'); print(data.head())\", \"timeout\": 30}', 'context_id': '2e5ecf50-5738-4a01-8c0c-fc3876ac3997', 'status': 'failed'}"
+        },
+        "mteb-leaderboard": {
+          "reward": 0.0
+        },
+        "mteb-retrieve": {
+          "reward": 0.0
+        },
+        "multi-source-data-merger": {
+          "reward": 0.0
+        },
+        "nginx-request-logging": {
+          "reward": 0.0
+        },
+        "openssl-selfsigned-cert": {
+          "reward": 0.0
+        },
+        "overfull-hbox": {
+          "reward": 0.0
+        },
+        "password-recovery": {
+          "reward": 0.0
+        },
+        "path-tracing": {
+          "error": "Command timed out after 30 seconds"
+        },
+        "path-tracing-reverse": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"strings /app/mystery | grep -o \\'[a-zA-Z0-9_]\\\\{3,\\\\}\\' | xargs -I {} echo \\'void {}(int* a, int b) {\\' && echo \\'\\'\", \"timeout\": 30}', 'context_id': 'b0941c5a-633b-4744-808b-c8cbad8a3424', 'status': 'failed'}"
+        },
+        "polyglot-c-py": {
+          "reward": 0.0
+        },
+        "polyglot-rust-c": {
+          "reward": 0.0
+        },
+        "portfolio-optimization": {
+          "reward": 0.0
+        },
+        "protein-assembly": {
+          "reward": 0.0
+        },
+        "prove-plus-comm": {
+          "reward": 0.0
+        },
+        "pypi-server": {
+          "reward": 0.0
+        },
+        "pytorch-model-cli": {
+          "reward": 0.0
+        },
+        "pytorch-model-recovery": {
+          "reward": 0.0
+        },
+        "qemu-alpine-ssh": {
+          "reward": 0.0
+        },
+        "qemu-startup": {
+          "reward": 0.0
+        },
+        "query-optimize": {
+          "reward": 0.0
+        },
+        "raman-fitting": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '345430c2-4f09-4a4e-8d00-dfde86f7858d', 'status': 'failed'}"
+        },
+        "regex-chess": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '6da1800f-72ca-494b-abe4-aaf4411d71cc', 'status': 'failed'}"
+        },
+        "regex-log": {
+          "reward": 0.0
+        },
+        "reshard-c4-data": {
+          "reward": 0.0
+        },
+        "rstan-to-pystan": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'ab6b244c-526b-4849-93ec-bb2be19846dd', 'status': 'failed'}"
+        },
+        "sam-cell-seg": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '68a951d3-8927-45c7-88ff-0db7d7d23c93', 'status': 'failed'}"
+        },
+        "sanitize-git-repo": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'e5a3ee8e-25e6-462a-a15f-899faad19956', 'status': 'failed'}"
+        },
+        "schemelike-metacircular-eval": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'cfd9c0bd-3b14-42bf-98eb-5e4bf69743b6', 'status': 'failed'}"
+        },
+        "sparql-university": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'f211e177-0015-40ee-989e-0858cad8ca10', 'status': 'failed'}"
+        },
+        "sqlite-db-truncate": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '09acab1a-a4e5-4eab-9713-4fc89f5c0b1b', 'status': 'failed'}"
+        },
+        "sqlite-with-gcov": {
+          "reward": 0.0
+        },
+        "torch-pipeline-parallelism": {
+          "reward": 0.0
+        },
+        "torch-tensor-parallelism": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '0fa04140-028e-4b4c-8d06-fdf0b2948233', 'status': 'failed'}"
+        },
+        "train-fasttext": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': 'ba4d1c50-29ea-4015-a33d-2e62049bb9d5', 'status': 'failed'}"
+        },
+        "tune-mjcf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Error code: 500', 'context_id': '2d1a527e-5909-4f52-a46c-f6b1be077b0b', 'status': 'failed'}"
+        },
+        "video-processing": {
+          "reward": 0.0
+        },
+        "vulnerable-secret": {
+          "reward": 0.0
+        },
+        "winning-avg-corewars": {
+          "error": "Command timed out after 30 seconds"
+        },
+        "write-compressor": {
+          "error": "HTTP Error 503: Network communication error: "
+        }
+      }
+    }
+  ]
+}
