@@ -14,6 +14,10 @@
       "agent_tracing_project": {
         "type": "string",
         "secret": false
+      },
+      "agent_tracing_endpoint": {
+        "type": "string",
+        "secret": false
       }
     },
     "required": [
@@ -44,7 +48,8 @@
       "config": {
         "academiccloud_api_key": "${config.agent_academiccloud_api_key}",
         "tracing_key": "${config.agent_tracing_key}",
-        "tracing_project": "${config.agent_tracing_project}"
+        "tracing_project": "${config.agent_tracing_project}",
+        "tracing_endpoint": "${config.agent_tracing_endpoint}"
       }
     }
   },
