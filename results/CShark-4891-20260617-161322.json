@@ -1,0 +1,332 @@
+{
+  "status": "completed",
+  "participants": {
+    "green": "019d87ef-2c6d-7091-8d93-827799c2ade3",
+    "agent": "019e8472-e017-72f0-9ba9-8c5d20e02d32"
+  },
+  "results": [
+    {
+      "score": 0,
+      "max_score": 12,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "adaptive-rejection-sampler": {
+          "error": "'kind'"
+        },
+        "chess-best-move": {
+          "error": "'kind'"
+        },
+        "crack-7z-hash": {
+          "error": "'kind'"
+        },
+        "feal-differential-cryptanalysis": {
+          "error": "'kind'"
+        },
+        "git-leak-recovery": {
+          "error": "'kind'"
+        },
+        "largest-eigenval": {
+          "error": "'kind'"
+        },
+        "model-extraction-relu-logits": {
+          "error": "'kind'"
+        },
+        "password-recovery": {
+          "error": "'kind'"
+        },
+        "pypi-server": {
+          "error": "'kind'"
+        },
+        "regex-log": {
+          "error": "'kind'"
+        },
+        "sqlite-with-gcov": {
+          "error": "'kind'"
+        },
+        "write-compressor": {
+          "error": "'kind'"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 11,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "bn-fit-modify": {
+          "error": "'kind'"
+        },
+        "circuit-fibsqrt": {
+          "error": "'kind'"
+        },
+        "custom-memory-heap-crash": {
+          "error": "'kind'"
+        },
+        "feal-linear-cryptanalysis": {
+          "error": "'kind'"
+        },
+        "git-multibranch": {
+          "error": "'kind'"
+        },
+        "llm-inference-batching-scheduler": {
+          "error": "'kind'"
+        },
+        "modernize-scientific-stack": {
+          "error": "'kind'"
+        },
+        "path-tracing": {
+          "error": "'kind'"
+        },
+        "pytorch-model-cli": {
+          "error": "'kind'"
+        },
+        "reshard-c4-data": {
+          "error": "'kind'"
+        },
+        "torch-pipeline-parallelism": {
+          "error": "'kind'"
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 11,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "break-filter-js-from-html": {
+          "error": "'kind'"
+        },
+        "cobol-modernization": {
+          "error": "'kind'"
+        },
+        "db-wal-recovery": {
+          "error": "'kind'"
+        },
+        "filter-js-from-html": {
+          "error": "'kind'"
+        },
+        "gpt2-codegolf": {
+          "error": "'kind'"
+        },
+        "log-summary-date-ranges": {
+          "error": "'kind'"
+        },
+        "mteb-leaderboard": {
+          "reward": 0.0
+        },
+        "path-tracing-reverse": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: Let me check what\\'s in the directory and get more information about the mystery program:\\n```json\\n{\"kind\": \"exec_request\", \"command\": \"ls -la /app/\", \"timeout\": 30}\\n```', 'context_id': '3ae55729-23fe-4da7-99d1-c3fa30f91605', 'status': 'failed'}"
+        },
+        "pytorch-model-recovery": {
+          "error": "'kind'"
+        },
+        "rstan-to-pystan": {
+          "error": "'kind'"
+        },
+        "torch-tensor-parallelism": {
+          "error": "'kind'"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 11,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-cython-ext": {
+          "error": "'kind'"
+        },
+        "code-from-image": {
+          "error": "'kind'"
+        },
+        "distribution-search": {
+          "error": "'kind'"
+        },
+        "financial-document-processor": {
+          "error": "'kind'"
+        },
+        "headless-terminal": {
+          "error": "'kind'"
+        },
+        "mailman": {
+          "error": "'kind'"
+        },
+        "mteb-retrieve": {
+          "error": "'kind'"
+        },
+        "polyglot-c-py": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '157e2ced-8a91-4270-a225-8ee14d942084', 'status': 'failed'}"
+        },
+        "qemu-alpine-ssh": {
+          "error": "'kind'"
+        },
+        "sam-cell-seg": {
+          "error": "'kind'"
+        },
+        "train-fasttext": {
+          "error": "'kind'"
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 11,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-pmars": {
+          "error": "'kind'"
+        },
+        "compile-compcert": {
+          "error": "'kind'"
+        },
+        "dna-assembly": {
+          "error": "'kind'"
+        },
+        "fix-code-vulnerability": {
+          "error": "'kind'"
+        },
+        "hf-model-inference": {
+          "error": "'kind'"
+        },
+        "make-doom-for-mips": {
+          "error": "'kind'"
+        },
+        "multi-source-data-merger": {
+          "error": "'kind'"
+        },
+        "polyglot-rust-c": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: I need to be more careful with the JSON formatting. Let me just execute the command directly:\\n{\"kind\": \"exec_request\", \"command\": \"echo \\'// Polyglot Fibonacci program\\\\n#include <iostream>\\\\n#include <cstdlib>\\\\n\\\\n// Fibonacci function\\\\nlong long fib(int n) {\\\\n    if (n <= 1) return 1;\\\\n    long long a = 1, b = 1, temp;\\\\n    for (int i = 2; i <= n; i++) {\\\\n        temp = a + b;\\\\n        a = b;\\\\n        b = temp;\\\\n    }\\\\n    return b;\\\\n}\\\\n\\\\nint main(int argc, char* argv[]) {\\\\n    if (argc != 2) {\\\\n        std::cerr << \\\\\"Usage: \\\\\" << argv[0] << \\\\\" N\\\\\\\\n\\\\\";\\\\n        return 1;\\\\n    }\\\\n    \\\\n    int n = std::atoi(argv[1]);\\\\n    if (n < 0) {\\\\n        std::cerr << \\\\\"N must be non-negative\\\\\\\\n\\\\\";\\\\n        return 1;\\\\n    }\\\\n    \\\\n    std::cout << fib(n) << \\\\\"\\\\\\\\n\\\\\";\\\\n    return 0;\\\\n}\\\\n\\\\n/*\\\\n// This is a comment block that makes this valid in Rust too\\\\nfn main() {\\\\n    // We\\\\\\\\\\'ll use the C++ version for now\\\\n    // But we need to make sure this compiles in Rust\\\\n}\\\\n*/\\' > /app/polyglot/main.rs\", \"timeout\": 30}', 'context_id': '3c313d79-294b-4937-bb5a-49bacc78a922', 'status': 'failed'}"
+        },
+        "qemu-startup": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: I apologize for the persistent formatting issues. Let me carefully follow the required format with just valid JSON:\\n\\n{\"kind\": \"exec_request\", \"command\": \"which qemu-system-x86-64\", \"timeout\": 30}', 'context_id': '03b44fff-98f6-4e85-a933-a535b4d30c55', 'status': 'failed'}"
+        },
+        "sanitize-git-repo": {
+          "reward": 0.0
+        },
+        "tune-mjcf": {
+          "error": "'kind'"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 11,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-pov-ray": {
+          "error": "'kind'"
+        },
+        "configure-git-webserver": {
+          "error": "'kind'"
+        },
+        "dna-insert": {
+          "error": "'kind'"
+        },
+        "fix-git": {
+          "error": "'kind'"
+        },
+        "install-windows-3.11": {
+          "error": "'kind'"
+        },
+        "make-mips-interpreter": {
+          "error": "'kind'"
+        },
+        "nginx-request-logging": {
+          "error": "'kind'"
+        },
+        "portfolio-optimization": {
+          "error": "'kind'"
+        },
+        "query-optimize": {
+          "error": "'kind'"
+        },
+        "schemelike-metacircular-eval": {
+          "error": "'kind'"
+        },
+        "video-processing": {
+          "error": "'kind'"
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 11,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "caffe-cifar-10": {
+          "error": "'kind'"
+        },
+        "constraints-scheduling": {
+          "error": "'kind'"
+        },
+        "extract-elf": {
+          "error": "'kind'"
+        },
+        "fix-ocaml-gc": {
+          "error": "'kind'"
+        },
+        "kv-store-grpc": {
+          "error": "'kind'"
+        },
+        "mcmc-sampling-stan": {
+          "error": "'kind'"
+        },
+        "openssl-selfsigned-cert": {
+          "error": "'kind'"
+        },
+        "protein-assembly": {
+          "reward": 0.0
+        },
+        "raman-fitting": {
+          "error": "'kind'"
+        },
+        "sparql-university": {
+          "error": "'kind'"
+        },
+        "vulnerable-secret": {
+          "error": "'kind'"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 11,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "cancel-async-tasks": {
+          "error": "'kind'"
+        },
+        "count-dataset-tokens": {
+          "error": "'kind'"
+        },
+        "extract-moves-from-video": {
+          "error": "'kind'"
+        },
+        "gcode-to-text": {
+          "error": "'kind'"
+        },
+        "large-scale-text-editing": {
+          "error": "'kind'"
+        },
+        "merge-diff-arc-agi-task": {
+          "error": "'kind'"
+        },
+        "overfull-hbox": {
+          "error": "'kind'"
+        },
+        "prove-plus-comm": {
+          "error": "'kind'"
+        },
+        "regex-chess": {
+          "error": "'kind'"
+        },
+        "sqlite-db-truncate": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: command in exec request has invalid shell syntax: \"bash: line 1: unexpected EOF while looking for matching ``\\'\" — command was: \\'grep -o \\\\\\'testword[0-9A-Za-z@!#$%^&*()_+{}|:<>?,./;\"\\\\\\\\\\\\\\'`~ ]*\\\\\\' /app/trunc.db | head -10\\'', 'context_id': 'c2bab66a-b0df-4899-a84b-f8109ecf0829', 'status': 'failed'}"
+        },
+        "winning-avg-corewars": {
+          "error": "'kind'"
+        }
+      }
+    }
+  ]
+}
