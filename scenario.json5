@@ -7,6 +7,10 @@
         "type": "string",
         "secret": true
       },
+      "agent_openrouter_api_key":{
+        "type": "string",
+        "secret": true
+      },
       "agent_tracing_key": {
         "type": "string",
         "secret": true
@@ -47,6 +51,7 @@
       "manifest": "https://raw.githubusercontent.com/Luca-Bke/EROverflow/refs/heads/main/amber-manifest.json5",
       "config": {
         "academiccloud_api_key": "${config.agent_academiccloud_api_key}",
+        "openrouter_api_key": "${config.agent_openrouter_api_key}",
         "tracing_key": "${config.agent_tracing_key}",
         "tracing_project": "${config.agent_tracing_project}",
         "tracing_endpoint": "${config.agent_tracing_endpoint}"
