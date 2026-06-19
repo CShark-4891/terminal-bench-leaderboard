@@ -1,0 +1,332 @@
+{
+  "status": "completed",
+  "participants": {
+    "green": "019d87ef-2c6d-7091-8d93-827799c2ade3",
+    "agent": "019e8472-e017-72f0-9ba9-8c5d20e02d32"
+  },
+  "results": [
+    {
+      "score": 1.0,
+      "max_score": 12,
+      "pass_rate": 8.333333333333332,
+      "task_rewards": {
+        "adaptive-rejection-sampler": {
+          "reward": 0.0
+        },
+        "chess-best-move": {
+          "reward": 0.0
+        },
+        "crack-7z-hash": {
+          "error": "Command timed out after 60 seconds"
+        },
+        "feal-differential-cryptanalysis": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Multiple JSON objects detected in one response — send only the FIRST single command and wait for its execution result before issuing the next. Offending response: {\"kind\": \"exec_request\", \"command\": \"bash -lc \\\\\"cat > attack.py <<\\'EOF\\'\\\\n\\\\\"\\\\\"\\\\\"Chosen-plaintext attack implementation for the simplified FEAL cipher.\\\\n\\\\nThe round keys are derived from a 16-bit seed via (seed * 1234567) & 0xFFFFFFFF.\\\\nWe can recover key[5] by brute-forcing the 16-bit seed space.\\\\n\\\\\"\\\\\"\\\\\"\\\\nimport feal\\\\nfrom typing import Callable\\\\n\\\\ndef attack(encrypt_fn: Callable[[int], int]) -> int:\\\\n    # Encrypt a known plaintext to get reference ciphertext\\\\n    plaintext = 0\\\\n    target = encrypt_fn(plaintext)\\\\n    # Save current keys (indices 0-4 are irrelevant for the brute force)\\\\n    original = feal.key.copy()\\\\n    for seed in range(0x10000):\\\\n        candidate = (seed * 1234567) & 0xFFFFFFFF\\\\n        # Restore other keys and set candidate for key[5]\\\\n        for i in range(5):\\\\n            feal.key[i] = original[i]\\\\n        feal.key[5] = candidate\\\\n        if encrypt_fn(plaintext) == target:\\\\n            feal.key = original\\\\n            return candidate\\\\n    raise RuntimeError(\\'key[5] not found\\')\\\\nEOF\\\\\"\"}]', 'context_id': 'ae75c11c-c10c-4e65-bb41-0e2d0bd588a9', 'status': 'failed'}"
+        },
+        "git-leak-recovery": {
+          "reward": 0.0
+        },
+        "largest-eigenval": {
+          "reward": 0.0
+        },
+        "model-extraction-relu-logits": {
+          "reward": 0.0
+        },
+        "password-recovery": {
+          "error": "Command timed out after 300 seconds"
+        },
+        "pypi-server": {
+          "reward": 0.0
+        },
+        "regex-log": {
+          "reward": 0.0
+        },
+        "sqlite-with-gcov": {
+          "reward": 1.0
+        },
+        "write-compressor": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 11,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "bn-fit-modify": {
+          "reward": 0.0
+        },
+        "circuit-fibsqrt": {
+          "reward": 0.0
+        },
+        "custom-memory-heap-crash": {
+          "reward": 0.0
+        },
+        "feal-linear-cryptanalysis": {
+          "reward": 0.0
+        },
+        "git-multibranch": {
+          "reward": 0.0
+        },
+        "llm-inference-batching-scheduler": {
+          "reward": 0.0
+        },
+        "modernize-scientific-stack": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"apply_patch <<\\'PATCH\\'\\\\n*** Begin Patch\\\\n*** Add File: analyze_climate_modern.py\\\\n+\\\\\"\\\\\"\\\\\"Modernized climate analysis script.\\\\n+\\\\n+Reads ``climate_analyzer/sample_data/climate_data.csv`` using pandas and prints\\\\n+the mean temperature for stations 101 and 102.\\\\n+\\\\\"\\\\\"\\\\\"\\\\n+\\\\n+from __future__ import annotations\\\\n+\\\\n+import configparser\\\\n+from pathlib import Path\\\\n+import sys\\\\n+\\\\n+import pandas as pd\\\\n+\\\\n+\\\\n+def load_config(config_path: Path) -> configparser.ConfigParser:\\\\n+    \\\\\"\\\\\"\\\\\"Load ``config.ini`` if it exists; return a ConfigParser instance.\\\\\"\\\\\"\\\\\"\\\\n+    parser = configparser.ConfigParser()\\\\n+    if config_path.is_file():\\\\n+        parser.read(config_path, encoding=\\\\\"utf-8\\\\\")\\\\n+    return parser\\\\n+\\\\n+\\\\n+def main() -> None:\\\\n+    base_dir = Path(__file__).resolve().parent\\\\n+    csv_path = base_dir / \\\\\"climate_analyzer\\\\\" / \\\\\"sample_data\\\\\" / \\\\\"climate_data.csv\\\\\"\\\\n+    config_path = base_dir / \\\\\"climate_analyzer\\\\\" / \\\\\"config.ini\\\\\"\\\\n+\\\\n+    if not csv_path.is_file():\\\\n+        sys.stderr.write(f\\\\\"CSV data file not found: {csv_path}\\\\\\\\n\\\\\")\\\\n+        sys.exit(1)\\\\n+\\\\n+    _ = load_config(config_path)\\\\n+\\\\n+    df = pd.read_csv(csv_path, encoding=\\\\\"utf-8\\\\\")\\\\n+\\\\n+    # Identify relevant columns (case‑insensitive)\\\\n+    station_col = None\\\\n+    temp_col = None\\\\n+    for col in df.columns:\\\\n+        lowered = col.lower()\\\\n+        if lowered in {\\\\\"station\\\\\", \\\\\"station_id\\\\\", \\\\\"stationid\\\\\"}:\\\\n+            station_col = col\\\\n+        if lowered in {\\\\\"temperature\\\\\", \\\\\"temp\\\\\", \\\\\"temp_c\\\\\", \\\\\"tempc\\\\\"}:\\\\n+            temp_col = col\\\\n+    if station_col is None or temp_col is None:\\\\n+        sys.stderr.write(\\\\\"Required columns not found in CSV.\\\\\\\\n\\\\\")\\\\n+        sys.exit(1)\\\\n+\\\\n+    for station_id in (101, 102):\\\\n+        mask = df[station_col] == station_id\\\\n+        if not mask.any():\\\\n+            print(f\\\\\"Station {station_id} mean temperature: N/A\\\\\")\\\\n+            continue\\\\n+        mean_temp = df.loc[mask, temp_col].mean()\\\\n+        print(f\\\\\"Station {station_id} mean temperature: {mean_temp:.1f}\\\\\\\\u00b0C\\\\\")\\\\n+\\\\n+\\\\n+if __name__ == \\\\\"__main__\\\\\":\\\\n+    main()\\\\n+\\\\n*** End Patch\\\\nPATCH\"]}', 'context_id': 'c704c1c0-952d-491a-9858-842b94593f52', 'status': 'failed'}"
+        },
+        "path-tracing": {
+          "reward": 0.0
+        },
+        "pytorch-model-cli": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"echo \\\\\"#!/usr/bin/env python3\\\\nimport sys, json, torch, torch.nn as nn\\\\nfrom PIL import Image\\\\nimport numpy as np\\\\n\\\\nclass MnistModel(nn.Module):\\\\n    def __init__(self, input_dim, hidden_dim, num_classes):\\\\n        super().__init__()\\\\n        self.input_layer = nn.Linear(input_dim, hidden_dim)\\\\n        self.hidden_layer = nn.Linear(hidden_dim, hidden_dim)\\\\n        self.output_layer = nn.Linear(hidden_dim, num_classes)\\\\n        self.activation = nn.ReLU()\\\\n    def forward(self, x):\\\\n        x = self.input_layer(x)\\\\n        x = self.activation(x)\\\\n        x = self.hidden_layer(x)\\\\n        x = self.activation(x)\\\\n        x = self.output_layer(x)\\\\n        return x\\\\n\\\\ndef load_weights(path):\\\\n    with open(path, \\'r\\') as f:\\\\n        data = json.load(f)\\\\n    input_dim = len(data[\\'input_layer.weight\\'][0])\\\\n    hidden_dim = len(data[\\'input_layer.weight\\'])\\\\n    num_classes = len(data[\\'output_layer.bias\\'])\\\\n    model = MnistModel(input_dim, hidden_dim, num_classes)\\\\n    state_dict = {k: torch.tensor(v) for k, v in data.items()}\\\\n    model.load_state_dict(state_dict)\\\\n    model.eval()\\\\n    return model\\\\n\\\\ndef preprocess_image(img_path):\\\\n    img = Image.open(img_path).convert(\\'L\\')\\\\n    img = img.resize((28, 28))\\\\n    arr = np.array(img, dtype=np.float32)\\\\n    arr = 255 - arr\\\\n    arr = arr / 255.0\\\\n    arr = arr.reshape(1, -1)\\\\n    return torch.from_numpy(arr)\\\\n\\\\ndef main():\\\\n    if len(sys.argv) != 3:\\\\n        print(\\'Usage: ./cli_tool weights.json image.png\\', file=sys.stderr)\\\\n        sys.exit(1)\\\\n    weights_path, image_path = sys.argv[1], sys.argv[2]\\\\n    model = load_weights(weights_path)\\\\n    inp = preprocess_image(image_path)\\\\n    with torch.no_grad():\\\\n        out = model(inp)\\\\n        pred = out.argmax(dim=1).item()\\\\n    print(pred)\\\\n    with open(\\'prediction.txt\\', \\'w\\') as f:\\\\n        f.write(str(pred))\\\\n\\\\nif __name__ == \\'__main__\\':\\\\n    main()\\\\n\\\\\" > cli_tool.py && chmod +x cli_tool.py\"], \"timeout\": 60}', 'context_id': '3b516805-99bb-4d25-9f5d-f55dcee45aaa', 'status': 'failed'}"
+        },
+        "reshard-c4-data": {
+          "reward": 0.0
+        },
+        "torch-pipeline-parallelism": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"apply_patch <<\\'PATCH\\'\\\\n*** Begin Patch\\\\n*** Add File: /app/pipeline_parallel.py\\\\n+\\\\\"\\\\\"\\\\\"Pipeline parallel training utilities for LLaMA models.\\\\n+\\\\n+Implements a single training step using *all‑forward‑all‑backward* (AFAB)\\\\n+ scheduling across pipeline stages. Works for world sizes of 1 and 2.\\\\n+\\\\\"\\\\\"\\\\\"\\\\n+\\\\n+from __future__ import annotations\\\\n+\\\\n+import torch\\\\n+import torch.distributed as dist\\\\n+import torch.nn.functional as F\\\\n+from typing import List\\\\n+\\\\n+\\\\n+def _partition_layers(num_layers: int, world_size: int, rank: int) -> slice:\\\\n+    \\\\\"\\\\\"\\\\\"Return a slice selecting a roughly balanced chunk of layers.\\\\n+\\\\n+    Layers are divided contiguously; the first ``remainder`` ranks receive one\\\\n+    extra layer when ``num_layers`` is not divisible by ``world_size``.\\\\n+    \\\\\"\\\\\"\\\\\"\\\\n+    per = num_layers // world_size\\\\n+    rem = num_layers % world_size\\\\n+    start = rank * per + min(rank, rem)\\\\n+    end = start + per + (1 if rank < rem else 0)\\\\n+    return slice(start, end)\\\\n+\\\\n+\\\\n+def train_step_pipeline_afab(\\\\n+    model: torch.nn.Module,\\\\n+    inputs: List[torch.Tensor],\\\\n+    targets: List[torch.Tensor],\\\\n+    device: torch.device,\\\\n+    dtype: torch.dtype,\\\\n+):\\\\n+    \\\\\"\\\\\"\\\\\"Run one training step using pipeline parallelism (AFAB).\\\\n+\\\\n+    Parameters\\\\n+    ----------\\\\n+    model: LlamaForCausalLM instance.\\\\n+    inputs: list of micro‑batch input ID tensors, shape ``[B, S]``.\\\\n+    targets: list of micro‑batch target ID tensors, same shape as inputs.\\\\n+    device: torch device.\\\\n+    dtype: torch dtype for activations.\\\\n+    \\\\\"\\\\\"\\\\\"\\\\n+\\\\n+    rank = dist.get_rank() if dist.is_initialized() else 0\\\\n+    world_size = dist.get_world_size() if dist.is_initialized() else 1\\\\n+\\\\n+    model.to(device=device, dtype=dtype)\\\\n+    model.train()\\\\n+\\\\n+    total_layers = len(model.model.layers)  # type: ignore[attr-defined]\\\\n+    layer_slice = _partition_layers(total_layers, world_size, rank)\\\\n+    local_layers = model.model.layers[layer_slice]  # type: ignore[attr-defined]\\\\n+\\\\n+    final_hiddens: List[torch.Tensor] = []\\\\n+\\\\n+    # Forward passes for all micro‑batches.\\\\n+    for batch_input in inputs:\\\\n+        batch_input = batch_input.to(device=device, dtype=torch.long)\\\\n+        if rank == 0:\\\\n+            hidden = model.model.embed_tokens(batch_input)  # type: ignore[attr-defined]\\\\n+        else:\\\\n+            recv = torch.empty(\\\\n+                batch_input.size(0),\\\\n+                batch_input.size(1),\\\\n+                model.config.hidden_size,\\\\n+                device=device,\\\\n+                dtype=dtype,\\\\n+            )\\\\n+            req = dist.irecv(recv, src=rank - 1)\\\\n+            req.wait()\\\\n+            hidden = recv\\\\n+        for layer in local_layers:\\\\n+            hidden = layer(hidden)\\\\n+        if rank < world_size - 1:\\\\n+            req = dist.isend(hidden, dst=rank + 1)\\\\n+            req.wait()\\\\n+        else:\\\\n+            final_hiddens.append(hidden)\\\\n+\\\\n+    total_loss = torch.tensor(0.0, device=device, dtype=dtype)\\\\n+    # Backward passes in reverse order.\\\\n+    for i in reversed(range(len(inputs))):\\\\n+        hidden = final_hiddens[i]\\\\n+        if rank == world_size - 1:\\\\n+            logits = model.lm_head(hidden)\\\\n+            tgt = targets[i].to(device=device, dtype=torch.long)\\\\n+            loss = F.cross_entropy(\\\\n+                logits.view(-1, model.config.vocab_size),\\\\n+                tgt.view(-1),\\\\n+                reduction=\\\\\"sum\\\\\",\\\\n+            )\\\\n+            total_loss = total_loss + loss\\\\n+            loss.backward(retain_graph=True)\\\\n+            grad = hidden.grad.clone()\\\\n+        else:\\\\n+            grad = torch.empty_like(hidden)\\\\n+            req = dist.irecv(grad, src=rank + 1)\\\\n+            req.wait()\\\\n+        for layer in reversed(local_layers):\\\\n+            hidden.requires_grad_(True)\\\\n+            out = layer(hidden)\\\\n+            out.backward(grad, retain_graph=True)\\\\n+            grad = hidden.grad.clone()\\\\n+            hidden.grad.zero_()\\\\n+        if rank > 0:\\\\n+            req = dist.isend(grad, dst=rank - 1)\\\\n+            req.wait()\\\\n+    if rank == world_size - 1:\\\\n+        return total_loss / len(inputs)\\\\n+\\\\n*** End Patch\\\\nPATCH\"]}', 'context_id': '2765621d-460b-4601-9cca-a6620a2d1588', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 1.0,
+      "max_score": 11,
+      "pass_rate": 9.090909090909092,
+      "task_rewards": {
+        "break-filter-js-from-html": {
+          "reward": 0.0
+        },
+        "cobol-modernization": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"cat > program.py <<\\'PY\\'\\\\n#!/usr/bin/env python3\\\\nimport os\\\\n\\\\nDATA_DIR = \\'data\\'\\\\nSRC_DIR = \\'src\\'\\\\n\\\\ndef read_fixed_line(path, widths):\\\\n    with open(path, \\'r\\') as f:\\\\n        for line in f:\\\\n            line = line.rstrip(\\'\\\\\\\\n\\')\\\\n            fields = []\\\\n            idx = 0\\\\n            for w in widths:\\\\n                fields.append(line[idx:idx+w])\\\\n                idx += w\\\\n            yield fields, line\\\\n\\\\ndef write_all(path, lines):\\\\n    with open(path, \\'w\\') as f:\\\\n        f.writelines(lines)\\\\n\\\\ndef main():\\\\n    # read input record\\\\n    input_path = os.path.join(SRC_DIR, \\'INPUT.DAT\\')\\\\n    with open(input_path, \\'r\\') as f:\\\\n        rec = f.read().strip(\\'\\\\\\\\n\\')\\\\n    if not rec:\\\\n        print(\\'Error: Input file is empty\\')\\\\n        return\\\\n    # INPUT fields: 4,4,4,10 numeric\\\\n    buyer_id = rec[0:4]\\\\n    seller_id = rec[4:8]\\\\n    book_id = rec[8:12]\\\\n    amount_str = rec[12:22]\\\\n    amount = int(amount_str)\\\\n\\\\n    # validation flags\\\\n    buyer_found = False\\\\n    seller_found = False\\\\n    book_found = False\\\\n    valid_owner = False\\\\n\\\\n    # validate accounts\\\\n    acct_path = os.path.join(DATA_DIR, \\'ACCOUNTS.DAT\\')\\\\n    acct_lines = []\\\\n    for fields, line in read_fixed_line(acct_path, [4,20,10]):\\\\n        acct_id, acct_name, acct_balance = fields\\\\n        if acct_id == buyer_id:\\\\n            buyer_found = True\\\\n        if acct_id == seller_id:\\\\n            seller_found = True\\\\n        acct_lines.append([acct_id, acct_name, acct_balance])\\\\n\\\\n    # validate books\\\\n    book_path = os.path.join(DATA_DIR, \\'BOOKS.DAT\\')\\\\n    book_lines = []\\\\n    for fields, line in read_fixed_line(book_path, [4,20,4]):\\\\n        b_id, b_title, b_owner = fields\\\\n        if b_id == book_id:\\\\n            book_found = True\\\\n            if b_owner == seller_id:\\\\n                valid_owner = True\\\\n        book_lines.append([b_id, b_title, b_owner])\\\\n\\\\n    if not (buyer_found and seller_found and book_found and valid_owner):\\\\n        print(\\'Transaction failed due to validation errors\\')\\\\n        return\\\\n\\\\n    # process transaction - update accounts balances\\\\n    new_acct_lines = []\\\\n    for acct_id, acct_name, acct_balance in acct_lines:\\\\n        bal = int(acct_balance)\\\\n        if acct_id == buyer_id:\\\\n            bal -= amount\\\\n        if acct_id == seller_id:\\\\n            bal += amount\\\\n        new_acct_lines.append(f\\\\\"{acct_id}{acct_name}{bal:0>10}\\\\\\\\n\\\\\")\\\\n    write_all(acct_path, new_acct_lines)\\\\n\\\\n    # update book owner\\\\n    new_book_lines = []\\\\n    for b_id, b_title, b_owner in book_lines:\\\\n        if b_id == book_id:\\\\n            b_owner = buyer_id\\\\n        new_book_lines.append(f\\\\\"{b_id}{b_title}{b_owner}\\\\\\\\n\\\\\")\\\\n    write_all(book_path, new_book_lines)\\\\n\\\\n    # append transaction record\\\\n    trans_path = os.path.join(DATA_DIR, \\'TRANSACTIONS.DAT\\')\\\\n    with open(trans_path, \\'a\\') as f:\\\\n        # fields: BOOK(4), AMOUNT(10), SELLER(4), BUYER(4)\\\\n        f.write(f\\\\\"{book_id}{amount:0>10}{seller_id}{buyer_id}\\\\\\\\n\\\\\")\\\\n\\\\n    print(\\'Transaction completed successfully\\')\\\\n\\\\nif __name__ == \\'__main__\\':\\\\n    main()\\\\nPY\\\\nchmod +x program.py\"], \"timeout\": 100000}', 'context_id': 'c8d93a65-2561-4997-9efe-fbba7aa19ffd', 'status': 'failed'}"
+        },
+        "db-wal-recovery": {
+          "reward": 0.0
+        },
+        "filter-js-from-html": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"bash -lc \\\\\"printf \\'%s\\\\n\\' \\'#!/usr/bin/env python3\\' \\'import sys, re\\' \\'\\' \\'def strip_js(content):\\' \\'    content = re.sub(r\\'<script\\\\\\\\\\\\\\\\b[^>]*?>.*?</script>\\', \\'\\', content, flags=re.IGNORECASE|re.DOTALL)\\' \\'    content = re.sub(r\\'(?i)\\\\\\\\\\\\\\\\b(on\\\\\\\\\\\\\\\\w+)\\\\\\\\\\\\\\\\s*=\\\\\\\\\\\\\\\\s*\\\\\"[^\\\\\"]*\\\\\"\\', \\'\\', content)\\' \\'    content = re.sub(r\\\\\"(?i)\\\\\\\\\\\\\\\\b(on\\\\\\\\\\\\\\\\w+)\\\\\\\\\\\\\\\\s*=\\\\\\\\\\\\\\\\s*\\'[^\\']*\\'\\\\\", \\'\\', content)\\' \\'    content = re.sub(r\\'(?i)\\\\\\\\\\\\\\\\b(on\\\\\\\\\\\\\\\\w+)\\\\\\\\\\\\\\\\s*=\\\\\\\\\\\\\\\\s*[^\\\\\\\\\\\\\\\\s>]+\\', \\'\\', content)\\' \\'    content = re.sub(r\\'(?i)=\\\\\\\\\\\\\\\\\\\\\"?javascript:[^\\\\\\\\\\\\\\\\\\\\\"]*\\\\\\\\\\\\\\\\\\\\\"?\\', \\'=\\\\\\\\\\\\\\\\\\\\\"\\\\\\\\\\\\\\\\\\\\\"\\', content)\\' \\'    content = re.sub(r\\\\\"(?i)=\\'?javascript:[^\\']*\\'?\\\\\", \\\\\"=\\'\\'\\\\\", content)\\' \\'    return content\\' \\'\\' \\'def main():\\' \\'    if len(sys.argv) != 2:\\' \\'        sys.stderr.write(\\\\\"Usage: filter.py <html_file>\\\\\\\\n\\\\\")\\' \\'        sys.exit(1)\\' \\'    path = sys.argv[1]\\' \\'    with open(path, \\\\\"r\\\\\", encoding=\\\\\"utf-8\\\\\") as f:\\' \\'        data = f.read()\\' \\'    cleaned = strip_js(data)\\' \\'    with open(path, \\\\\"w\\\\\", encoding=\\\\\"utf-8\\\\\") as f:\\' \\'        f.write(cleaned)\\' \\'\\' \\'if __name__ == \\\\\"__main__\\\\\":\\' \\'    main()\\' > /app/filter.py && chmod +x /app/filter.py\\\\\"\"], \"timeout\": 120}', 'context_id': '7c59df67-cc1a-43dd-8752-d5d5973a6d1a', 'status': 'failed'}"
+        },
+        "gpt2-codegolf": {
+          "reward": 0.0
+        },
+        "log-summary-date-ranges": {
+          "reward": 0.0
+        },
+        "mteb-leaderboard": {
+          "reward": 0.0
+        },
+        "path-tracing-reverse": {
+          "reward": 0.0
+        },
+        "pytorch-model-recovery": {
+          "reward": 1.0
+        },
+        "rstan-to-pystan": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"bash -c \\\\\"python3 - <<\\'PY\\'\\\\nimport pandas as pd, json, stan\\\\ntrain_X = pd.read_csv(\\'/app/train_X.csv\\')\\\\ntrain_y = pd.read_csv(\\'/app/train_y.csv\\')\\\\nN = train_X.shape[0]\\\\nK = train_X.shape[1]\\\\nstan_code = \\'\\'\\'\\\\nparameters {\\\\n  real alpha;\\\\n  vector[K] beta;\\\\n  real<lower=0> sigma;\\\\n}\\\\nmodel {\\\\n  alpha ~ normal(0, 10);\\\\n  beta ~ normal(0, 10);\\\\n  sigma ~ cauchy(0, 5);\\\\n  train_y ~ normal(alpha + train_X * beta, sigma);\\\\n}\\\\n\\'\\'\\'\\\\nstan_data = {\\'N\\': N, \\'K\\': K, \\'train_X\\': train_X.values, \\'train_y\\': train_y.values.ravel()}\\\\nmodel = stan.build(stan_code, data=stan_data, random_seed=1)\\\\nfit = model.sample(num_samples=1000, num_warmup=500, chains=4)\\\\nposterior = fit.to_frame()\\\\nalpha_mean = posterior[\\'alpha\\'].mean()\\\\nsigma_mean = posterior[\\'sigma\\'].mean()\\\\nbeta_means = posterior[[f\\'beta[{i+1}]\\' for i in range(K)]].mean().values\\\\npd.DataFrame([alpha_mean]).to_csv(\\'/app/alpha_est.csv\\', header=False, index=False)\\\\npd.DataFrame([sigma_mean]).to_csv(\\'/app/sigma_est.csv\\', header=False, index=False)\\\\npd.DataFrame(beta_means).to_csv(\\'/app/beta_est.csv\\', header=False, index=False)\\\\nPY\\\\\"\"], \"timeout\": 300}', 'context_id': '1fadfc00-050d-48a5-baa9-6377a040afa6', 'status': 'failed'}"
+        },
+        "torch-tensor-parallelism": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"apply_patch <<\\'PATCH\\'\\\\n*** Begin Patch\\\\n*** Add File: parallel_linear.py\\\\n+\\\\\"\\\\\"\\\\\"Implementation of simple tensor parallel linear layers.\\\\n+\\\\n+The module provides two classes that mimic the behaviour of the tensor‑parallel\\\\n+linear layers used in large‑scale models (e.g. Megatron‑LM).  The implementation\\\\n+is deliberately lightweight and only depends on ``torch`` and ``torch.distributed``.\\\\n+\\\\n+Both classes accept a *master_weight* – the full weight matrix – and internally\\\\n+shard it across the ranks of the current process group.  The sharding strategy\\\\n+differs between the two classes:\\\\n+\\\\n+* **ColumnParallelLinear** – the weight matrix is split along the output dimension\\\\n+  (columns).  Each rank holds a slice ``W_local`` of shape ``(out_features // world_size,\\\\n+  in_features)``.  During the forward pass the local matrix‑multiply produces a\\\\n+  partial output ``y_local`` of shape ``(..., out_features_local)`` which is then\\\\n+  gathered from all ranks (simulated with ``torch.distributed.all_gather``) and\\\\n+  concatenated to form the final output.  The bias, when present, is also sharded\\\\n+  in the same way.\\\\n+\\\\n+* **RowParallelLinear** – the weight matrix is split along the input dimension\\\\n+  (rows).  Each rank holds a slice ``W_local`` of shape ``(out_features,\\\\n+  in_features // world_size)``.  The input is also split accordingly, the local\\\\n+  matrix‑multiply yields a partial output of shape ``(..., out_features)`` and the\\\\n+  partial results are summed across ranks using ``torch.distributed.all_reduce``.\\\\n+  The bias is **not** sharded; each rank keeps a full copy.\\\\n+\\\\n+The classes are deliberately simple – they do not attempt to handle edge cases\\\\n+such as a world size that does not evenly divide the relevant dimension.  The\\\\n+test suite used for this exercise only exercises world sizes of 1, 2, and 4, all\\\\n+of which divide typical feature dimensions used in the tests.\\\\n+\\\\\"\\\\\"\\\\\"\\\\n+\\\\n+from __future__ import annotations\\\\n+\\\\n+import torch\\\\n+import torch.nn as nn\\\\n+import torch.distributed as dist\\\\n+\\\\n+\\\\n+def _get_world_info():\\\\n+    \\\\\"\\\\\"\\\\\"Return ``(world_size, rank)``. If the process group is not initialized,\\\\n+    treat it as a single‑process group.\\\\n+    \\\\\"\\\\\"\\\\\"\\\\n+    if not dist.is_available() or not dist.is_initialized():\\\\n+        return 1, 0\\\\n+    return dist.get_world_size(), dist.get_rank()\\\\n+\\\\n+\\\\n+class ColumnParallelLinear(nn.Module):\\\\n+    \\\\\"\\\\\"\\\\\"Linear layer with weight sharded by columns (output dimension).\\\\n+\\\\n+    Parameters\\\\n+    ----------\\\\n+    in_features: int\\\\n+        Size of each input sample.\\\\n+    out_features: int\\\\n+        Size of each output sample (full size before sharding).\\\\n+    bias: bool\\\\n+        Whether to include a bias term.\\\\n+    master_weight: torch.Tensor\\\\n+        Full weight matrix of shape ``(out_features, in_features)``.\\\\n+    \\\\\"\\\\\"\\\\\"\\\\n+\\\\n+    def __init__(self, in_features: int, out_features: int, bias: bool, master_weight: torch.Tensor):\\\\n+        super().__init__()\\\\n+        world_size, rank = _get_world_info()\\\\n+        assert master_weight.shape == (out_features, in_features)\\\\n+        assert out_features % world_size == 0, \\\\\"out_features must be divisible by world size\\\\\"\\\\n+        local_out = out_features // world_size\\\\n+        weight_slice = master_weight[rank * local_out : (rank + 1) * local_out, :].contiguous()\\\\n+        self.weight = nn.Parameter(weight_slice)\\\\n+        self.in_features = in_features\\\\n+        self.out_features = out_features\\\\n+        self.world_size = world_size\\\\n+        self.rank = rank\\\\n+        if bias:\\\\n+            bias_tensor = torch.zeros(local_out, device=master_weight.device, dtype=master_weight.dtype)\\\\n+            self.bias = nn.Parameter(bias_tensor)\\\\n+        else:\\\\n+            self.register_parameter(\\\\\"bias\\\\\", None)\\\\n+\\\\n+    def forward(self, input: torch.Tensor) -> torch.Tensor:\\\\n+        output_local = torch.nn.functional.linear(input, self.weight, self.bias)\\\\n+        if self.world_size == 1:\\\\n+            return output_local\\\\n+        output_list = [torch.empty_like(output_local) for _ in range(self.world_size)]\\\\n+        dist.all_gather(output_list, output_local)\\\\n+        return torch.cat(output_list, dim=-1)\\\\n+\\\\n+\\\\n+class RowParallelLinear(nn.Module):\\\\n+    \\\\\"\\\\\"\\\\\"Linear layer with weight sharded by rows (input dimension).\\\\\"\\\\\"\\\\\"\\\\n+\\\\n+    def __init__(self, in_features: int, out_features: int, bias: bool, master_weight: torch.Tensor):\\\\n+        super().__init__()\\\\n+        world_size, rank = _get_world_info()\\\\n+        assert master_weight.shape == (out_features, in_features)\\\\n+        assert in_features % world_size == 0, \\\\\"in_features must be divisible by world size\\\\\"\\\\n+        local_in = in_features // world_size\\\\n+        weight_slice = master_weight[:, rank * local_in : (rank + 1) * local_in].contiguous()\\\\n+        self.weight = nn.Parameter(weight_slice)\\\\n+        self.in_features = in_features\\\\n+        self.out_features = out_features\\\\n+        self.world_size = world_size\\\\n+        self.rank = rank\\\\n+        if bias:\\\\n+            bias_tensor = torch.zeros(out_features, device=master_weight.device, dtype=master_weight.dtype)\\\\n+            self.bias = nn.Parameter(bias_tensor)\\\\n+        else:\\\\n+            self.register_parameter(\\\\\"bias\\\\\", None)\\\\n+\\\\n+    def forward(self, input: torch.Tensor) -> torch.Tensor:\\\\n+        if self.world_size == 1:\\\\n+            input_local = input\\\\n+        else:\\\\n+            splits = torch.split(input, self.in_features // self.world_size, dim=-1)\\\\n+            input_local = splits[self.rank]\\\\n+        output_local = torch.nn.functional.linear(input_local, self.weight, self.bias)\\\\n+        if self.world_size == 1:\\\\n+            return output_local\\\\n+        dist.all_reduce(output_local, op=dist.ReduceOp.SUM)\\\\n+        return output_local\\\\n+\\\\n*** End Patch\\\\nPATCH\"]}', 'context_id': 'cc026eaf-eda1-438a-b2a6-afad4649eb54', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 11,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-cython-ext": {
+          "reward": 0.0
+        },
+        "code-from-image": {
+          "reward": 0.0
+        },
+        "distribution-search": {
+          "reward": 0.0
+        },
+        "financial-document-processor": {
+          "reward": 0.0
+        },
+        "headless-terminal": {
+          "reward": 0.0
+        },
+        "mailman": {
+          "reward": 0.0
+        },
+        "mteb-retrieve": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\":\"exec_request\",\"command\":\"printf \\'%s\\\\n\\' \\\\\"import os\\\\\" \\\\\"from pathlib import Path\\\\\" \\\\\"from sentence_transformers import SentenceTransformer\\\\\" \\\\\"import numpy as np\\\\\" \\\\\"model = SentenceTransformer(\\'BAAI/bge-small-zh-v1.5\\', revision=\\'7999e1d3359715c523056ef9478215996d62a620\\')\\\\\" \\\\\"query = \\'terminal-bench\\'\\\\\" \\\\\"query_emb = model.encode(query, normalize_embeddings=True)\\\\\" \\\\\"data_path = Path(\\'/app/data.txt\\')\\\\\" \\\\\"lines = data_path.read_text(encoding=\\'utf-8\\').splitlines()\\\\\" \\\\\"docs = [line.strip() for line in lines]\\\\\" \\\\\"embs = model.encode(docs, normalize_embeddings=True)\\\\\" \\\\\"sims = np.dot(embs, query_emb)\\\\\" \\\\\"sorted_idx = np.argsort(-sims)\\\\\" \\\\\"result = docs[sorted_idx[4]] if len(sorted_idx) >= 5 else \\'\\'\\\\\" \\\\\"Path(\\'/app/result.txt\\').write_text(result, encoding=\\'utf-8\\')\\\\\" \\\\\"print(\\'done\\')\\\\\" > /tmp/run.py\"], \"timeout\": 120}', 'context_id': '8fb7f6c0-e6aa-4ea1-b611-513a1e59b3a6', 'status': 'failed'}"
+        },
+        "polyglot-c-py": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"mkdir -p /app/polyglot && cat > /app/polyglot/main.py.c <<\\'EOF\\'\\\\n#!/usr/bin/env python3\\\\nimport sys\\\\nn=int(sys.argv[1])\\\\na,b=0,1\\\\nfor _ in range(n):\\\\n    a,b=b,a+b\\\\nprint(a)\\\\n\\\\\"\\\\\"\\\\\"\\\\n#include <stdio.h>\\\\n#include <stdlib.h>\\\\nint main(int argc, char**argv){\\\\n    if(argc<2) return 1;\\\\n    int n=atoi(argv[1]);\\\\n    long long a=0,b=1;\\\\n    for(int i=0;i<n;i++){ long long t=a+b;a=b;b=t; }\\\\n    printf(\\\\\"%lld\\\\\\\\n\\\\\",a);\\\\n    return 0;\\\\n}\\\\n\\\\\"\\\\\"\\\\\"\\\\nexit()\\\\nEOF\"], \"timeout\": 120}', 'context_id': '3db3c5f9-51a3-4283-ab23-366a1b2d6ef7', 'status': 'failed'}"
+        },
+        "qemu-alpine-ssh": {
+          "reward": 0.0
+        },
+        "sam-cell-seg": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"apply_patch <<\\'PATCH\\'\\\\n*** Begin Patch\\\\n*** Add File: convert_masks.py\\\\n+#!/usr/bin/env python3\\\\n+\\\\\"\\\\\"\\\\\"Convert rectangular and polyline masks to refined polylines using MobileSAM.\\\\n+\\\\n+The script reads a CSV with mask metadata, runs MobileSAM on each mask region to\\\\n+obtain a refined segmentation, extracts the contour as a polyline and writes a\\\\n+new CSV with updated coordinates. All processing is performed on CPU.\\\\n+\\\\\"\\\\\"\\\\\"\\\\n+\\\\n+import argparse\\\\n+import os\\\\n+import cv2\\\\n+import numpy as np\\\\n+import pandas as pd\\\\n+import torch\\\\n+from tqdm import tqdm\\\\n+from mobile_sam import sam_model_registry, SamPredictor\\\\n+\\\\n+\\\\n+def load_image(path: str) -> np.ndarray:\\\\n+    img = cv2.imread(path, cv2.IMREAD_COLOR)\\\\n+    if img is None:\\\\n+        raise FileNotFoundError(f\\\\\"Image not found: {path}\\\\\")\\\\n+    return img\\\\n+\\\\n+\\\\n+def init_predictor(weights_path: str, device: str = \\\\\"cpu\\\\\"):\\\\n+    model_type = \\\\\"MobileSAM\\\\\"\\\\n+    sam = sam_model_registry[model_type](checkpoint=weights_path)\\\\n+    sam.to(device=device)\\\\n+    return SamPredictor(sam)\\\\n+\\\\n+\\\\n+def refine_mask(predictor: SamPredictor, image: np.ndarray, box: list) -> np.ndarray:\\\\n+    predictor.set_image(image)\\\\n+    input_box = torch.tensor([box], dtype=torch.float32)\\\\n+    masks, _, _ = predictor.predict(\\\\n+        point_coords=None,\\\\n+        point_labels=None,\\\\n+        box=input_box,\\\\n+        multimask_output=False,\\\\n+    )\\\\n+    return masks[0].cpu().numpy().astype(np.uint8) * 255\\\\n+\\\\n+\\\\n+def mask_to_polyline(mask: np.ndarray):\\\\n+    contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)\\\\n+    if not contours:\\\\n+        return [], []\\\\n+    contour = max(contours, key=cv2.contourArea).squeeze(1)\\\\n+    return contour[:, 0].tolist(), contour[:, 1].tolist()\\\\n+\\\\n+\\\\n+def update_bounds(xs, ys):\\\\n+    if not xs:\\\\n+        return 0, 0, 0, 0\\\\n+    return min(xs), max(xs), min(ys), max(ys)\\\\n+\\\\n+\\\\n+def main():\\\\n+    parser = argparse.ArgumentParser(description=\\\\\"Refine masks with MobileSAM\\\\\")\\\\n+    parser.add_argument(\\\\\"--weights_path\\\\\", required=True, help=\\\\\"Path to MobileSAM weights\\\\\")\\\\n+    parser.add_argument(\\\\\"--output_path\\\\\", required=True, help=\\\\\"Folder to save refined CSV\\\\\")\\\\n+    parser.add_argument(\\\\\"--rgb_path\\\\\", required=True, help=\\\\\"Path to RGB image\\\\\")\\\\n+    parser.add_argument(\\\\\"--csv_path\\\\\", required=True, help=\\\\\"Path to input metadata CSV\\\\\")\\\\n+    args = parser.parse_args()\\\\n+\\\\n+    os.makedirs(args.output_path, exist_ok=True)\\\\n+    image = load_image(args.rgb_path)\\\\n+    df = pd.read_csv(args.csv_path)\\\\n+\\\\n+    predictor = init_predictor(args.weights_path)\\\\n+    out_rows = []\\\\n+    for _, row in tqdm(df.iterrows(), total=len(df), desc=\\\\\"Processing masks\\\\\"):\\\\n+        box = [int(row[\\\\\"xmin\\\\\"]), int(row[\\\\\"ymin\\\\\"]), int(row[\\\\\"xmax\\\\\"]), int(row[\\\\\"ymax\\\\\"])]\\\\n+        try:\\\\n+            mask = refine_mask(predictor, image, box)\\\\n+            xs, ys = mask_to_polyline(mask)\\\\n+        except Exception:\\\\n+            xs = eval(row[\\\\\"coords_x\\\\\"]) if isinstance(row[\\\\\"coords_x\\\\\"], str) else list(row[\\\\\"coords_x\\\\\"])\\\\n+            ys = eval(row[\\\\\"coords_y\\\\\"]) if isinstance(row[\\\\\"coords_y\\\\\"], str) else list(row[\\\\\"coords_y\\\\\"])\\\\n+        if not xs:\\\\n+            xs = eval(row[\\\\\"coords_x\\\\\"]) if isinstance(row[\\\\\"coords_x\\\\\"], str) else list(row[\\\\\"coords_x\\\\\"])\\\\n+            ys = eval(row[\\\\\"coords_y\\\\\"]) if isinstance(row[\\\\\"coords_y\\\\\"], str) else list(row[\\\\\"coords_y\\\\\"])\\\\n+        xmin, xmax, ymin, ymax = update_bounds(xs, ys)\\\\n+        out_rows.append({\\\\n+            \\\\\"xmin\\\\\": xmin,\\\\n+            \\\\\"xmax\\\\\": xmax,\\\\n+            \\\\\"ymin\\\\\": ymin,\\\\n+            \\\\\"ymax\\\\\": ymax,\\\\n+            \\\\\"coords_x\\\\\": xs,\\\\n+            \\\\\"coords_y\\\\\": ys,\\\\n+        })\\\\n+    out_df = pd.DataFrame(out_rows)\\\\n+    out_file = os.path.join(args.output_path, os.path.basename(args.csv_path))\\\\n+    out_df.to_csv(out_file, index=False)\\\\n+    print(f\\\\\"Saved refined masks to {out_file}\\\\\")\\\\n+\\\\n+\\\\n+if __name__ == \\\\\"__main__\\\\\":\\\\n+    main()\\\\n+\\\\n*** End Patch\\\\nPATCH\"]}', 'context_id': '12608640-70ca-44d3-a40c-ef2cdf66b640', 'status': 'failed'}"
+        },
+        "train-fasttext": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: command in exec request has invalid shell syntax: \"bash: line 28: syntax error near unexpected token `&&\\'\\\\nbash: line 28: ` && python3 /tmp/train_fasttext.py\\'\" — command was: \\'bash -c \"cat > /tmp/train_fasttext.py <<\\\\\\'EOF\\\\\\'\\\\nimport fasttext, pyarrow.parquet as pq\\\\n\\\\ndef parquet_to_fasttext(parquet_path, out_path):\\\\n    table = pq.read_table(parquet_path)\\\\n    texts = table.column(\\\\\\'text\\\\\\').to_pylist()\\\\n    labels = table.column(\\\\\\'label\\\\\\').to_pylist()\\\\n    with open(out_path, \\\\\\'w\\\\\\', encoding=\\\\\\'utf-8\\\\\\') as f:\\\\n        for txt, lbl in zip(texts, labels):\\\\n            cleaned = txt.replace(\\\\\\'\\\\\\\\n\\\\\\', \\\\\\' \\\\\\')\\\\n            f.write(f\\\\\\'__label__{lbl} {cleaned}\\\\\\\\n\\\\\\')\\\\n\\\\nparquet_to_fasttext(\\\\\\'data/train-00000-of-00001.parquet\\\\\\', \\\\\\'train.txt\\\\\\')\\\\nparquet_to_fasttext(\\\\\\'data/test-00000-of-00001.parquet\\\\\\', \\\\\\'test.txt\\\\\\')\\\\nmodel = fasttext.train_supervised(\\\\n    input=\\\\\\'train.txt\\\\\\',\\\\n    epoch=60,\\\\n    lr=0.1,\\\\n    dim=300,\\\\n    wordNgrams=2,\\\\n    loss=\\\\\\'softmax\\\\\\',\\\\n    bucket=200000,\\\\n    thread=4)\\\\nmodel.save_model(\\\\\\'/app/model.bin\\\\\\')\\\\nresult = model.test(\\\\\\'test.txt\\\\\\')\\\\nprint(\\\\\\'Accuracy:\\\\\\', result[1])\\\\nEOF\"\\\\n && python3 /tmp/train_fasttext.py\\'', 'context_id': 'b8f893d1-0d4b-4b54-8ca1-3ff8ebe3f87c', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 2.0,
+      "max_score": 11,
+      "pass_rate": 18.181818181818183,
+      "task_rewards": {
+        "build-pmars": {
+          "reward": 0.0
+        },
+        "compile-compcert": {
+          "reward": 0.0
+        },
+        "dna-assembly": {
+          "reward": 0.0
+        },
+        "fix-code-vulnerability": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"apply_patch <<\\'PATCH\\'\\\\n*** Begin Patch\\\\n*** Update File: bottle.py\\\\n@@\\\\n class HeaderDict(MultiDict):\\\\n@@\\\\n-    def __init__(self, *a, **ka):\\\\n-        self.dict = {}\\\\n-        if a or ka: self.update(*a, **ka)\\\\n+    def __init__(self, *a, **ka):\\\\n+        # Internal storage uses a normal dict with lower‑cased keys.\\\\n+        self.dict = {}\\\\n+        if a or ka:\\\\n+            self.update(*a, **ka)\\\\n+\\\\n+    # ---------------------------------------------------------------------\\\\n+    # Validation helpers\\\\n+    # ---------------------------------------------------------------------\\\\n+    @staticmethod\\\\n+    def _validate_header(key: str, value: str) -> None:\\\\n+        \\\\\"\\\\\"\\\\\"Validate header *key* and *value* according to RFC‑7230.\\\\n+\\\\n+        The test suite expects a ``ValueError`` when control characters\\\\n+        (CR, LF, or NUL) are present in either the header name or the value.\\\\n+        This addresses CWE‑20 (Improper Input Validation) and CWE‑93\\\\n+        (CRLF Injection).\\\\n+        \\\\\"\\\\\"\\\\\"\\\\n+        # Disallow CR (\\\\\\\\r), LF (\\\\\\\\n) and NUL (\\\\\\\\0) characters.\\\\n+        for part, name in ((key, \\\\\"header name\\\\\"), (value, \\\\\"header value\\\\\")):\\\\n+            if any(ch in part for ch in (\\\\\"\\\\\\\\r\\\\\", \\\\\"\\\\\\\\n\\\\\", \\\\\"\\\\\\\\0\\\\\")):\\\\n+                raise ValueError(f\\\\\"Invalid {name}: contains prohibited control characters\\\\\")\\\\n*** End Patch\\\\nPATCH\"]}', 'context_id': 'eabedf0b-2f6f-401f-a8c2-99a0924117df', 'status': 'failed'}"
+        },
+        "hf-model-inference": {
+          "reward": 1.0
+        },
+        "make-doom-for-mips": {
+          "reward": 0.0
+        },
+        "multi-source-data-merger": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"pip install --quiet pandas pyarrow && cat > /tmp/merge_users.py <<\\'PY\\'\\\\nimport pandas as pd, json\\\\nfrom pathlib import Path\\\\n\\\\nsrc_a = Path(\\'/data/source_a/users.json\\')\\\\nsrc_b = Path(\\'/data/source_b/users.csv\\')\\\\nsrc_c = Path(\\'/data/source_c/users.parquet\\')\\\\nout_parquet = Path(\\'/app/merged_users.parquet\\')\\\\nout_conflict = Path(\\'/app/conflicts.json\\')\\\\n\\\\n# Load data\\\\ndf_a = pd.read_json(src_a)\\\\ndf_b = pd.read_csv(src_b)\\\\ndf_c = pd.read_parquet(src_c)\\\\n\\\\n# Column rename map\\\\nrename_map = {\\\\n    \\'user_id\\': \\'user_id\\', \\'id\\': \\'user_id\\', \\'userId\\': \\'user_id\\',\\\\n    \\'email\\': \\'email\\', \\'email_address\\': \\'email\\',\\\\n    \\'full_name\\': \\'name\\', \\'name\\': \\'name\\', \\'userName\\': \\'name\\',\\\\n    \\'registration_date\\': \\'created_date\\', \\'created_at\\': \\'created_date\\', \\'joined\\': \\'created_date\\'\\\\n}\\\\n\\\\ndef normalize(df):\\\\n    df = df.rename(columns={c: rename_map[c] for c in df.columns if c in rename_map})\\\\n    needed = [\\'user_id\\', \\'name\\', \\'email\\', \\'created_date\\']\\\\n    extra = [c for c in df.columns if c not in needed]\\\\n    df = df[needed + extra]\\\\n    if \\'user_id\\' in df.columns:\\\\n        df[\\'user_id\\'] = pd.to_numeric(df[\\'user_id\\'], errors=\\'coerce\\').astype(\\'Int64\\')\\\\n    if \\'created_date\\' in df.columns:\\\\n        df[\\'created_date\\'] = pd.to_datetime(df[\\'created_date\\'], errors=\\'coerce\\').dt.strftime(\\'%Y-%m-%d\\')\\\\n    return df\\\\n\\\\ndf_a = normalize(df_a)\\\\ndf_b = normalize(df_b)\\\\ndf_c = normalize(df_c)\\\\n\\\\n# Priority order\\\\nsources = [(\\'source_a\\', df_a), (\\'source_b\\', df_b), (\\'source_c\\', df_c)]\\\\n\\\\nrecords = {}\\\\nconflicts = []\\\\n\\\\nfor src_name, df in sources:\\\\n    for _, row in df.iterrows():\\\\n        uid = row.get(\\'user_id\\')\\\\n        if pd.isna(uid):\\\\n            continue\\\\n        uid = int(uid)\\\\n        if uid not in records:\\\\n            records[uid] = {\\'source\\': src_name, \\'row\\': row.to_dict()}\\\\n        else:\\\\n            existing = records[uid]\\\\n            existing_row = existing[\\'row\\']\\\\n            for field in [\\'name\\', \\'email\\', \\'created_date\\']:\\\\n                new_val = row.get(field)\\\\n                old_val = existing_row.get(field)\\\\n                if pd.isna(new_val) or new_val == old_val:\\\\n                    continue\\\\n                conflicts.append({\\\\n                    \\'user_id\\': uid,\\\\n                    \\'field\\': field,\\\\n                    \\'values\\': {existing[\\'source\\']: old_val, src_name: new_val},\\\\n                    \\'selected\\': old_val\\\\n                })\\\\n            # keep higher priority (existing) values\\\\n\\\\nmerged_rows = []\\\\nfor uid, info in records.items():\\\\n    row = info[\\'row\\']\\\\n    row[\\'user_id\\'] = uid\\\\n    merged_rows.append(row)\\\\nmerged = pd.DataFrame(merged_rows)\\\\nmerged = merged[[\\'user_id\\', \\'name\\', \\'email\\', \\'created_date\\']]\\\\nmerged[\\'user_id\\'] = merged[\\'user_id\\'].astype(\\'Int64\\')\\\\n\\\\nout_parquet.parent.mkdir(parents=True, exist_ok=True)\\\\nmerged.to_parquet(out_parquet, index=False)\\\\n\\\\nconflict_report = {\\'total_conflicts\\': len(conflicts), \\'conflicts\\': conflicts}\\\\nwith open(out_conflict, \\'w\\') as f:\\\\n    json.dump(conflict_report, f, indent=2)\\\\nPY\\\\npython3 /tmp/merge_users.py\"], \"timeout\": 300}', 'context_id': 'a73a501b-8cae-4931-9ce1-78e7205550b7', 'status': 'failed'}"
+        },
+        "polyglot-rust-c": {
+          "reward": 0.0
+        },
+        "qemu-startup": {
+          "reward": 1.0
+        },
+        "sanitize-git-repo": {
+          "reward": 0.0
+        },
+        "tune-mjcf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"python3 - <<\\'PY\\'\\\\nimport xml.etree.ElementTree as ET\\\\n\\\\ntree = ET.parse(\\'model_ref.xml\\')\\\\nroot = tree.getroot()\\\\ncompiler = root.find(\\'compiler\\')\\\\nif compiler is None:\\\\n    compiler = ET.SubElement(root, \\'compiler\\')\\\\nfor opt in list(compiler):\\\\n    if opt.tag == \\'option\\':\\\\n        compiler.remove(opt)\\\\nET.SubElement(compiler, \\'option\\', {\\'timestep\\':\\'0.0015\\',\\'iterations\\':\\'15\\',\\'tolerance\\':\\'1e-8\\'})\\\\n\\\\ntree.write(\\'model.xml\\')\\\\nPY\"], \"timeout\": 60}', 'context_id': 'eaaea057-b63d-4614-8223-78df31084515', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 3.0,
+      "max_score": 11,
+      "pass_rate": 27.27272727272727,
+      "task_rewards": {
+        "build-pov-ray": {
+          "error": "Command timed out after 300 seconds"
+        },
+        "configure-git-webserver": {
+          "reward": 1.0
+        },
+        "dna-insert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"python3 - <<\\'PY\\'\\\\nfrom Bio import SeqIO\\\\nrecords = list(SeqIO.parse(\\'sequences.fasta\\',\\'fasta\\'))\\\\nseq1=str(records[0].seq)\\\\nseq2=str(records[1].seq)\\\\nmuts=[i for i,(a,b) in enumerate(zip(seq1,seq2)) if a!=b]\\\\nprint(\\'mutations\\',len(muts))\\\\nblocks=[]\\\\nif muts:\\\\n    start=muts[0]\\\\n    prev=muts[0]\\\\n    for pos in muts[1:]:\\\\n        if pos==prev+1:\\\\n            prev=pos\\\\n        else:\\\\n            blocks.append((start,prev))\\\\n            start=pos;prev=pos\\\\n    blocks.append((start,prev))\\\\nprint(\\'blocks\\',blocks)\\\\nPY\"], \"timeout\": 60}', 'context_id': '61970641-3d40-4b38-bb9f-dfc28774dbb4', 'status': 'failed'}"
+        },
+        "fix-git": {
+          "reward": 1.0
+        },
+        "install-windows-3.11": {
+          "reward": 0.0
+        },
+        "make-mips-interpreter": {
+          "reward": 0.0
+        },
+        "nginx-request-logging": {
+          "reward": 1.0
+        },
+        "portfolio-optimization": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"apply_patch <<\\'PATCH\\'\\\\n*** Begin Patch\\\\n*** Update File: portfolio_optimized.c\\\\n@@\\\\n static PyObject* portfolio_risk_c(PyObject *self, PyObject *args) {\\\\n@@\\\\n-    // TODO: Implement portfolio risk calculation: sqrt(x^T * S * x)\\\\n-    \\\\n-    return PyFloat_FromDouble(0.0);  // TODO: Replace with actual result\\\\n+    // Validate input types and contiguity\\\\n+    if (PyArray_TYPE(weights_array) != NPY_DOUBLE || PyArray_TYPE(cov_array) != NPY_DOUBLE) {\\\\n+        PyErr_SetString(PyExc_TypeError, \\\\\"Arrays must be of type float64\\\\\");\\\\n+        return NULL;\\\\n+    }\\\\n+    if (!PyArray_ISCARRAY(weights_array) || !PyArray_ISCARRAY(cov_array)) {\\\\n+        PyErr_SetString(PyExc_ValueError, \\\\\"Arrays must be contiguous\\\\\");\\\\n+        return NULL;\\\\n+    }\\\\n+\\\\n+    npy_intp n = PyArray_DIM(weights_array, 0);\\\\n+    if (PyArray_NDIM(cov_array) != 2 || PyArray_DIM(cov_array, 0) != n || PyArray_DIM(cov_array, 1) != n) {\\\\n+        PyErr_SetString(PyExc_ValueError, \\\\\"Covariance matrix must be square and match weight size\\\\\");\\\\n+        return NULL;\\\\n+    }\\\\n+\\\\n+    double *weights = (double*)PyArray_DATA(weights_array);\\\\n+    double *cov = (double*)PyArray_DATA(cov_array);\\\\n+\\\\n+    // Compute S * x -> temp vector\\\\n+    double *temp = (double*)malloc(n * sizeof(double));\\\\n+    if (!temp) {\\\\n+        PyErr_NoMemory();\\\\n+        return NULL;\\\\n+    }\\\\n+    for (npy_intp i = 0; i < n; ++i) {\\\\n+        double sum = 0.0;\\\\n+        double *row = cov + i * n; // row-major layout\\\\n+        for (npy_intp j = 0; j < n; ++j) {\\\\n+            sum += row[j] * weights[j];\\\\n+        }\\\\n+        temp[i] = sum;\\\\n+    }\\\\n+    // Compute x^T * temp\\\\n+    double risk_sq = 0.0;\\\\n+    for (npy_intp i = 0; i < n; ++i) {\\\\n+        risk_sq += weights[i] * temp[i];\\\\n+    }\\\\n+    free(temp);\\\\n+    double risk = sqrt(risk_sq);\\\\n+    return PyFloat_FromDouble(risk);\\\\n }\\\\n@@\\\\n static PyObject* portfolio_return_c(PyObject *self, PyObject *args) {\\\\n@@\\\\n-    // TODO: Implement portfolio return calculation: weights^T * returns\\\\n-    \\\\n-    return PyFloat_FromDouble(0.0);  // TODO: Replace with actual result\\\\n+    if (PyArray_TYPE(weights_array) != NPY_DOUBLE || PyArray_TYPE(returns_array) != NPY_DOUBLE) {\\\\n+        PyErr_SetString(PyExc_TypeError, \\\\\"Arrays must be of type float64\\\\\");\\\\n+        return NULL;\\\\n+    }\\\\n+    if (!PyArray_ISCARRAY(weights_array) || !PyArray_ISCARRAY(returns_array)) {\\\\n+        PyErr_SetString(PyExc_ValueError, \\\\\"Arrays must be contiguous\\\\\");\\\\n+        return NULL;\\\\n+    }\\\\n+    npy_intp n = PyArray_DIM(weights_array, 0);\\\\n+    if (PyArray_DIM(returns_array, 0) != n) {\\\\n+        PyErr_SetString(PyExc_ValueError, \\\\\"Returns array size must match weights\\\\\");\\\\n+        return NULL;\\\\n+    }\\\\n+    double *weights = (double*)PyArray_DATA(weights_array);\\\\n+    double *returns = (double*)PyArray_DATA(returns_array);\\\\n+    double total = 0.0;\\\\n+    for (npy_intp i = 0; i < n; ++i) {\\\\n+        total += weights[i] * returns[i];\\\\n+    }\\\\n+    return PyFloat_FromDouble(total);\\\\n }\\\\n*** End Patch\\\\nPATCH\"]}', 'context_id': '8308988c-1fd7-494c-9710-f473316a17ae', 'status': 'failed'}"
+        },
+        "query-optimize": {
+          "error": "Command timed out after 120 seconds"
+        },
+        "schemelike-metacircular-eval": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"apply_patch <<\\'PATCH\\'\\\\n*** Begin Patch\\\\n*** Add File: eval.scm\\\\n+;; eval.scm – a metacircular evaluator for the tiny Scheme interpreter\\\\n+;; The Python driver (interp.py) reads the first line of STDIN as a file path,\\\\n+;; then evaluates that file before processing the remaining input.  This file\\\\n+;; therefore reads the next line (the program to run), loads it, and then\\\\n+;; evaluates any further input, printing results.\\\\n+\\\\n+;; ------------------------------------------------------------\\\\n+;; Helpers\\\\n+;; ------------------------------------------------------------\\\\n+(define (string-index-of s sub)\\\\n+  (let ((len-s (string-length s))\\\\n+        (len-sub (string-length sub)))\\\\n+    (let loop ((i 0))\\\\n+      (if (> i (- len-s len-sub))\\\\n+          #f\\\\n+          (if (string=? (substring s i (+ i len-sub)) sub)\\\\n+              i\\\\n+              (loop (+ i 1)))))))\\\\n+\\\\n+(define (string-split s delim)\\\\n+  (let loop ((rest s) (parts \\'()))\\\\n+    (let ((idx (string-index-of rest delim)))\\\\n+      (if (not idx)\\\\n+          (reverse (cons rest parts))\\\\n+          (let ((head (substring rest 0 idx))\\\\n+                (tail (substring rest (+ idx (string-length delim)))))\\\\n+            (loop tail (cons head parts)))))))\\\\n+\\\\n+(define (for-each proc lst)\\\\n+  (if (null? lst)\\\\n+      #<undef>\\\\n+      (begin (proc (car lst)) (for-each proc (cdr lst)))))\\\\n+\\\\n+;; ------------------------------------------------------------\\\\n+;; File reading utilities (built on primitives provided by interp.py)\\\\n+;; ------------------------------------------------------------\\\\n+(define (read-file path)\\\\n+  (let ((port (open-input-file path)))\\\\n+    (let loop ((acc \\\\\"\\\\\"))\\\\n+      (let ((line (read-line port)))\\\\n+        (if (eof-object? line)\\\\n+            (begin (close-input-port port) acc)\\\\n+            (loop (string-append acc line \\\\\"\\\\\\\\n\\\\\")))))))\\\\n+\\\\n+(define (load-file path)\\\\n+  (for-each (lambda (ln) (eval-line ln))\\\\n+            (string-split (read-file path) \\\\\"\\\\\\\\n\\\\\")))\\\\n+\\\\n+;; ------------------------------------------------------------\\\\n+;; Evaluate a single line of Scheme code and print the result (if any).\\\\n+;; ------------------------------------------------------------\\\\n+(define (eval-line line)\\\\n+  (let ((expr (parse line)))\\\\n+    (let ((result (eval expr)))\\\\n+      (when (not (eq? result #<undef>))\\\\n+        (display result)\\\\n+        (newline)))))\\\\n+\\\\n+;; ------------------------------------------------------------\\\\n+;; Main driver\\\\n+;; ------------------------------------------------------------\\\\n+(define (main)\\\\n+  (let ((prog (read)))               ; first expression after this file is a string\\\\n+    (when prog\\\\n+      (load-file prog))\\\\n+    ;; evaluate remaining input line‑by‑line\\\\n+    (let loop ()\\\\n+      (let ((ln (read-line)))\\\\n+        (if (eof-object? ln)\\\\n+            #<undef>\\\\n+            (begin (eval-line ln) (loop)))))))\\\\n+\\\\n+(main)\\\\n+\\\\n*** End Patch\\\\nPATCH\"]}', 'context_id': '7e86cae3-d933-48ef-8a0f-4d5246b39d9e', 'status': 'failed'}"
+        },
+        "video-processing": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 1.0,
+      "max_score": 11,
+      "pass_rate": 9.090909090909092,
+      "task_rewards": {
+        "caffe-cifar-10": {
+          "reward": 0.0
+        },
+        "constraints-scheduling": {
+          "reward": 0.0
+        },
+        "extract-elf": {
+          "reward": 0.0
+        },
+        "fix-ocaml-gc": {
+          "reward": 0.0
+        },
+        "kv-store-grpc": {
+          "reward": 1.0
+        },
+        "mcmc-sampling-stan": {
+          "error": "Command timed out after 300 seconds"
+        },
+        "openssl-selfsigned-cert": {
+          "reward": 0.0
+        },
+        "protein-assembly": {
+          "reward": 0.0
+        },
+        "raman-fitting": {
+          "reward": 0.0
+        },
+        "sparql-university": {
+          "reward": 0.0
+        },
+        "vulnerable-secret": {
+          "error": "Command timed out after 300 seconds"
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 11,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "cancel-async-tasks": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"apply_patch <<\\'PATCH\\'\\\\n*** Begin Patch\\\\n*** Add File: run.py\\\\n+\\\\\"\\\\\"\\\\\"Utility to run a collection of asynchronous tasks with a concurrency limit.\\\\n+\\\\n+The implementation relies solely on the standard library ``asyncio`` module. It\\\\n+accepts a list of *callables* that each return an awaitable when invoked. A\\\\n+semaphore caps the number of tasks that may run concurrently.\\\\n+\\\\n+Cancellation handling\\\\n+----------------------\\\\n+When the surrounding coroutine is cancelled (e.g., via ``KeyboardInterrupt``),\\\\n+the cancellation propagates as ``asyncio.CancelledError``. By awaiting each\\\\n+task inside a ``try``/``except`` block that re‑raises the cancellation after the\\\\n+task has completed, we guarantee that the task\\'s ``finally`` blocks (its cleanup\\\\n+code) are executed.\\\\n+\\\\\"\\\\\"\\\\\"\\\\n+\\\\n+from __future__ import annotations\\\\n+\\\\n+import asyncio\\\\n+from collections.abc import Awaitable, Callable\\\\n+from typing import List\\\\n+\\\\n+\\\\n+async def _run_one(\\\\n+    task_factory: Callable[[], Awaitable[None]],\\\\n+    semaphore: asyncio.Semaphore,\\\\n+) -> None:\\\\n+    \\\\\"\\\\\"\\\\\"Run a single task while respecting the concurrency semaphore.\\\\n+\\\\n+    The *task_factory* is called only after a slot becomes available, ensuring\\\\n+    that any side‑effects of task creation respect the concurrency limit.\\\\n+    \\\\\"\\\\\"\\\\\"\\\\n+    async with semaphore:\\\\n+        awaitable = task_factory()\\\\n+        try:\\\\n+            await awaitable\\\\n+        except asyncio.CancelledError:\\\\n+            # Allow the task\\'s cleanup code to run, then propagate cancellation.\\\\n+            raise\\\\n+\\\\n+\\\\n+async def run_tasks(\\\\n+    tasks: List[Callable[[], Awaitable[None]]],\\\\n+    max_concurrent: int,\\\\n+) -> None:\\\\n+    \\\\\"\\\\\"\\\\\"Execute *tasks* concurrently, limited to *max_concurrent* simultaneous jobs.\\\\n+\\\\n+    Parameters\\\\n+    ----------\\\\n+    tasks:\\\\n+        A list of callables. Each callable must return an awaitable that performs\\\\n+        the actual asynchronous work.\\\\n+    max_concurrent:\\\\n+        Positive integer specifying the maximum number of tasks that may run at\\\\n+        the same time.\\\\n+    \\\\\"\\\\\"\\\\\"\\\\n+    if max_concurrent <= 0:\\\\n+        raise ValueError(\\\\\"max_concurrent must be a positive integer\\\\\")\\\\n+\\\\n+    semaphore = asyncio.Semaphore(max_concurrent)\\\\n+    coroutines = [_run_one(factory, semaphore) for factory in tasks]\\\\n+\\\\n+    # Wait for all tasks to finish. ``asyncio.wait`` propagates the first exception\\\\n+    # (including cancellation) to the caller, which is the desired behaviour.\\\\n+    await asyncio.wait(coroutines, return_when=asyncio.ALL_COMPLETED)\\\\n+\\\\n*** End Patch\\\\nPATCH\"]}', 'context_id': 'ed4a157f-8c19-46e5-bcd6-92cc29bff26a', 'status': 'failed'}"
+        },
+        "count-dataset-tokens": {
+          "reward": 0.0
+        },
+        "extract-moves-from-video": {
+          "reward": 0.0
+        },
+        "gcode-to-text": {
+          "reward": 0.0
+        },
+        "large-scale-text-editing": {
+          "reward": 0.0
+        },
+        "merge-diff-arc-agi-task": {
+          "reward": 0.0
+        },
+        "overfull-hbox": {
+          "reward": 0.0
+        },
+        "prove-plus-comm": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: The given response is not valid JSON: {\"kind\": \"exec_request\", \"command\": \"apply_patch <<\\'PATCH\\'\\\\n*** Begin Patch\\\\n*** Update File: plus_comm.v\\\\n@@\\\\n   induction n as [|n\\' IHn\\'].\\\\n   - simpl.\\\\n-    (* Need to handle the base case *)\\\\n-    admit.\\\\n+    (* Base case: 0 + m = m + 0 *)\\\\n+    rewrite <- plus_n_O.\\\\n+    reflexivity.\\\\n   - simpl.\\\\n-    (* Need to use the inductive hypothesis and plus_n_Sm *)\\\\n-    admit.\\\\n+    (* Inductive step: S n\\' + m = m + S n\\' *)\\\\n+    rewrite IHn\\'.\\\\n+    rewrite plus_n_Sm.\\\\n+    reflexivity.\\\\n Qed.\\\\n*** End Patch\\\\nPATCH\"]}', 'context_id': '20507bcb-bf7d-40c2-9364-6f148820e9f3', 'status': 'failed'}"
+        },
+        "regex-chess": {
+          "reward": 0.0
+        },
+        "sqlite-db-truncate": {
+          "reward": 0.0
+        },
+        "winning-avg-corewars": {
+          "reward": 0.0
+        }
+      }
+    }
+  ]
+}
