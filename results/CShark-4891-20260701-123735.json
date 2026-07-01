@@ -1,0 +1,388 @@
+{
+  "status": "completed",
+  "participants": {
+    "green": "019d87ef-2c6d-7091-8d93-827799c2ade3",
+    "agent": "019e8472-e017-72f0-9ba9-8c5d20e02d32"
+  },
+  "results": [
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "adaptive-rejection-sampler": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '037868bc-8df1-4153-8edc-679410ed391e', 'status': 'failed'}"
+        },
+        "crack-7z-hash": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'd6a19ce8-9534-44d5-822a-9f2fc6b5ca1c', 'status': 'failed'}"
+        },
+        "git-leak-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'cb72759a-e15a-40fd-bf90-6595f9f91b8a', 'status': 'failed'}"
+        },
+        "model-extraction-relu-logits": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'cc7a9cd5-c950-4891-b511-311476013226', 'status': 'failed'}"
+        },
+        "pypi-server": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'e20ca98e-fe95-4444-bc43-39e588e48c6f', 'status': 'failed'}"
+        },
+        "sqlite-with-gcov": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '78f3e0b4-ad10-4556-a178-2776f4316de9', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "bn-fit-modify": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'a6000146-3b77-49ca-b75e-2bea76263383', 'status': 'failed'}"
+        },
+        "custom-memory-heap-crash": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '2b8c6a72-0d04-4554-9d20-84c210995e2b', 'status': 'failed'}"
+        },
+        "git-multibranch": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '5859b576-4797-4cd3-a578-08afb701437a', 'status': 'failed'}"
+        },
+        "modernize-scientific-stack": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '9790294b-3a30-45ec-bab8-f6d878590a88', 'status': 'failed'}"
+        },
+        "pytorch-model-cli": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '075e2850-3f30-4efb-992e-53952d9fcac6', 'status': 'failed'}"
+        },
+        "torch-pipeline-parallelism": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'c6478a26-05f1-4110-9e4f-4985194eea6c', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "break-filter-js-from-html": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'b7b0da8a-328d-442a-9c75-050ac145668c', 'status': 'failed'}"
+        },
+        "db-wal-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '2b469447-0d75-44ed-94db-d03dd42a3c71', 'status': 'failed'}"
+        },
+        "gpt2-codegolf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'c6afe325-5c02-4479-a4cf-2639eacbdfe1', 'status': 'failed'}"
+        },
+        "mteb-leaderboard": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '689c51bb-7aca-4ffc-8818-0b0e0dc82b74', 'status': 'failed'}"
+        },
+        "pytorch-model-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'cf2acad4-7bf7-4b78-b8fe-e166395ae0b2', 'status': 'failed'}"
+        },
+        "torch-tensor-parallelism": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '713b9c24-41be-40c3-86ec-d1a3f209d782', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-cython-ext": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '3650621e-0028-44f8-9f93-1d110a4912c6', 'status': 'failed'}"
+        },
+        "distribution-search": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'f62d3aa6-13a3-4281-bf4f-bba9f199b5b5', 'status': 'failed'}"
+        },
+        "headless-terminal": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '4b9142a1-1f8b-436d-addb-ce5190c0ab6d', 'status': 'failed'}"
+        },
+        "mteb-retrieve": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '044c343f-5e70-4eef-8829-64f0a5fec57e', 'status': 'failed'}"
+        },
+        "qemu-alpine-ssh": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '4c271b7d-0798-4972-b2c7-b77c07e671b5', 'status': 'failed'}"
+        },
+        "train-fasttext": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'a85d1a12-dfed-48b5-bdf4-6c82c08b80d3', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-pmars": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '579efc7e-0d0a-4c89-8752-ad6346e71c8b', 'status': 'failed'}"
+        },
+        "dna-assembly": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '902b5bda-d93c-4c5a-a2e9-af57e4be47bd', 'status': 'failed'}"
+        },
+        "hf-model-inference": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '63d649d9-2016-457b-aac1-28e46e9ad7f3', 'status': 'failed'}"
+        },
+        "multi-source-data-merger": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '3e12ac97-db89-4cef-9806-810ad3e78262', 'status': 'failed'}"
+        },
+        "qemu-startup": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'd6085541-50c7-41b8-8ea3-c288b9ad9bef', 'status': 'failed'}"
+        },
+        "tune-mjcf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '6e912fae-2640-4854-9c97-83e119ecaae4', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-pov-ray": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'a8d5b4ae-fcb4-44ca-b1ed-da8543aa24b6', 'status': 'failed'}"
+        },
+        "dna-insert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '99cc6e4a-bed3-4f7c-b4c1-91adadbb1920', 'status': 'failed'}"
+        },
+        "install-windows-3.11": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '63af5077-8c13-4558-a058-76a8e60e3445', 'status': 'failed'}"
+        },
+        "nginx-request-logging": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'f07f6801-6aff-4368-b310-cbc2c32ffbaf', 'status': 'failed'}"
+        },
+        "query-optimize": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'a078a8af-3991-4853-ad0d-eabb27a3306e', 'status': 'failed'}"
+        },
+        "video-processing": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '99ff2a9c-6f5f-4cd3-8a96-e2457b34d978', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "caffe-cifar-10": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '4fda8931-2f09-4a9a-a3d8-830b558b444e', 'status': 'failed'}"
+        },
+        "extract-elf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '6237af12-9b30-4ac1-9260-13dd2ff2032d', 'status': 'failed'}"
+        },
+        "kv-store-grpc": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'e79ad727-bb3b-4d53-a34b-e173a22df7f4', 'status': 'failed'}"
+        },
+        "openssl-selfsigned-cert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '3c2e842b-e3c5-48eb-8538-539b6895f69a', 'status': 'failed'}"
+        },
+        "raman-fitting": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'd473dfa5-b4b4-403f-865d-03e9cfdfcecd', 'status': 'failed'}"
+        },
+        "vulnerable-secret": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'c5db290e-4cc8-41c6-9657-fce2f638c220', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "cancel-async-tasks": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'b0733400-a087-4375-a06e-2f486f125366', 'status': 'failed'}"
+        },
+        "extract-moves-from-video": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'bd6fa71b-6ec3-44ba-afab-5131e828e40a', 'status': 'failed'}"
+        },
+        "large-scale-text-editing": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '21c62434-8985-4541-ace9-1d3e05852b4d', 'status': 'failed'}"
+        },
+        "overfull-hbox": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '32ec4a04-310a-4cf6-a15d-3a243e2c0674', 'status': 'failed'}"
+        },
+        "regex-chess": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '737b62bb-8407-4c1d-9746-eab40453909e', 'status': 'failed'}"
+        },
+        "winning-avg-corewars": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '4899b641-af5c-4168-ac17-67099f5fff1e', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "chess-best-move": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '44992165-7114-4285-aee9-dfc8eb43eaf1', 'status': 'failed'}"
+        },
+        "feal-differential-cryptanalysis": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '210e4e00-2477-423c-84ab-665cd1093577', 'status': 'failed'}"
+        },
+        "largest-eigenval": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '48d68e79-53f2-406c-a53b-b8dc41123356', 'status': 'failed'}"
+        },
+        "password-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'edb27ea8-5894-42ab-9ae4-17ac5a4b50c2', 'status': 'failed'}"
+        },
+        "regex-log": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'ef959c0e-38b0-4429-86a2-430e5ea9cf97', 'status': 'failed'}"
+        },
+        "write-compressor": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'f12ab078-b941-4faa-addd-4d65d1d1f48a', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "circuit-fibsqrt": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'f7b82b3b-3b01-4fec-9cfd-5006e3e0e780', 'status': 'failed'}"
+        },
+        "feal-linear-cryptanalysis": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'f69a27c2-b920-4439-8db3-c2cf138deafd', 'status': 'failed'}"
+        },
+        "llm-inference-batching-scheduler": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '768ae9d0-0bef-4c38-8091-71732d15e0e8', 'status': 'failed'}"
+        },
+        "path-tracing": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'c29e9e69-2590-4e6b-b441-695f0e5c7502', 'status': 'failed'}"
+        },
+        "reshard-c4-data": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '2d8385e8-ff36-41cf-86ac-d1b3e2b115fc', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "cobol-modernization": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '7382254b-dbc6-4f18-82dc-a30185dfc6e9', 'status': 'failed'}"
+        },
+        "filter-js-from-html": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '1cf4a2b1-bbee-4e9d-acfa-0e0fe77fc0c9', 'status': 'failed'}"
+        },
+        "log-summary-date-ranges": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'caafff94-999d-4b15-b106-d7cf6d82c682', 'status': 'failed'}"
+        },
+        "path-tracing-reverse": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '6fc6a7da-d5b6-4373-96b7-f30f9f43b12a', 'status': 'failed'}"
+        },
+        "rstan-to-pystan": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '0c9c2a3e-4867-442c-898e-0f007fe6c959', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "code-from-image": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'c25a84f3-43a1-44c1-a1cc-4e59529f368f', 'status': 'failed'}"
+        },
+        "financial-document-processor": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'a911debd-1bac-4f58-b05b-458a4393fc69', 'status': 'failed'}"
+        },
+        "mailman": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '4f43cbe4-0781-482f-954e-62bc0995d96d', 'status': 'failed'}"
+        },
+        "polyglot-c-py": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'ac2efb2e-6903-4e97-8a3a-42f62cbeb8c3', 'status': 'failed'}"
+        },
+        "sam-cell-seg": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '82d81d9d-cbaf-474d-9817-041067b89a64', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "compile-compcert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'b9cca205-c9d7-4e73-8e29-0601d5c4f451', 'status': 'failed'}"
+        },
+        "fix-code-vulnerability": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '9875c3f7-bda0-49d8-b257-b01874e92c94', 'status': 'failed'}"
+        },
+        "make-doom-for-mips": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '7eef79a6-34d2-4544-a79f-f2dcb355cb36', 'status': 'failed'}"
+        },
+        "polyglot-rust-c": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '85737a99-e264-4edc-83de-139e36d5ce27', 'status': 'failed'}"
+        },
+        "sanitize-git-repo": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'f7e709c1-5594-43ce-b336-76538b824484', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "configure-git-webserver": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '45933032-e290-4cff-bddc-2f9750299a37', 'status': 'failed'}"
+        },
+        "fix-git": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'bdfc96b6-a800-45c2-95d8-bf2d02113177', 'status': 'failed'}"
+        },
+        "make-mips-interpreter": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'df37b656-c276-4231-8d9b-f19b05987e93', 'status': 'failed'}"
+        },
+        "portfolio-optimization": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '258ffc60-1a16-4aa1-bd2e-8ec5e7359bef', 'status': 'failed'}"
+        },
+        "schemelike-metacircular-eval": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '642fd5e1-4724-4f5b-8aac-aa25b95dce3e', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "constraints-scheduling": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '55ac6e13-de69-4fc8-a0f0-4f9efb782195', 'status': 'failed'}"
+        },
+        "fix-ocaml-gc": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'a8f12a5e-a8c0-4ee3-99dd-a2843abc1a02', 'status': 'failed'}"
+        },
+        "mcmc-sampling-stan": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'a86e94a2-05a7-421f-9b6b-5f9631c74493', 'status': 'failed'}"
+        },
+        "protein-assembly": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '919168ef-8401-4d31-96a7-a4ddbe47aa54', 'status': 'failed'}"
+        },
+        "sparql-university": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'd93673d2-99c6-41c4-aca1-3ec6fb82fb4e', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "count-dataset-tokens": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'aad52735-b734-4ead-97ed-9c2ec49b2866', 'status': 'failed'}"
+        },
+        "gcode-to-text": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '3dc2c04d-b5bb-40ed-8952-b74757511da8', 'status': 'failed'}"
+        },
+        "merge-diff-arc-agi-task": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': '009564d2-3876-44f5-aa07-db94a5a7860f', 'status': 'failed'}"
+        },
+        "prove-plus-comm": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'cdb192d6-74a8-4595-a236-85235fcbba4d', 'status': 'failed'}"
+        },
+        "sqlite-db-truncate": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: LLMHUB_APIKEY environment variable not set', 'context_id': 'b41dfb27-f44e-4fc7-9716-3288c6aae8eb', 'status': 'failed'}"
+        }
+      }
+    }
+  ]
+}
