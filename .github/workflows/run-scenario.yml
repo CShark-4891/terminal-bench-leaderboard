@@ -42,6 +42,7 @@ jobs:
       matrix:
         shard_index: ${{ fromJSON(needs.setup.outputs.shard_indices) }}
       fail-fast: false
+      max-parallel: 4
 
     permissions:
       contents: read
