@@ -1,0 +1,388 @@
+{
+  "status": "completed",
+  "participants": {
+    "green": "019d87ef-2c6d-7091-8d93-827799c2ade3",
+    "agent": "019e8472-e017-72f0-9ba9-8c5d20e02d32"
+  },
+  "results": [
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "adaptive-rejection-sampler": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '02741be2-c45b-4793-a032-e1e9bc09f89c', 'status': 'failed'}"
+        },
+        "crack-7z-hash": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '6c4fba25-ed09-477a-8ad9-15d4dbfa9188', 'status': 'failed'}"
+        },
+        "git-leak-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '3900ff39-f792-41a5-8360-368b5218372b', 'status': 'failed'}"
+        },
+        "model-extraction-relu-logits": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'b6a8a6b0-c02e-429a-9196-b72c11aca2f4', 'status': 'failed'}"
+        },
+        "pypi-server": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '00725056-9e2b-407a-bc57-9c507c65a480', 'status': 'failed'}"
+        },
+        "sqlite-with-gcov": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '6ba1c21f-4db9-4334-9d20-c710e81517db', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "bn-fit-modify": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '0c93b79d-3ad0-4252-b4f4-4d01725b360d', 'status': 'failed'}"
+        },
+        "custom-memory-heap-crash": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'd8bbca1a-f707-433a-b8b0-fec8f553b569', 'status': 'failed'}"
+        },
+        "git-multibranch": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '3575980c-4ecc-41a6-8ea4-8ee2f723f590', 'status': 'failed'}"
+        },
+        "modernize-scientific-stack": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '2c6f07c2-869d-48cb-bd44-7bf230b7cea5', 'status': 'failed'}"
+        },
+        "pytorch-model-cli": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '4348bf86-8fe7-40a5-aed0-fc15b09915ae', 'status': 'failed'}"
+        },
+        "torch-pipeline-parallelism": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'a75a0837-08a6-4444-be35-3d5bf0ea1d63', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "break-filter-js-from-html": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '3a43e213-f63d-4a09-8085-b9c30d8679e2', 'status': 'failed'}"
+        },
+        "db-wal-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '0711dcd0-fba8-4f39-b7a9-996aa790a559', 'status': 'failed'}"
+        },
+        "gpt2-codegolf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'f5d6c2aa-881f-45a0-a470-d9be4cc91431', 'status': 'failed'}"
+        },
+        "mteb-leaderboard": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'c29893ce-2ed8-4913-ac73-123b8aa991c1', 'status': 'failed'}"
+        },
+        "pytorch-model-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '40bf50e4-aa04-4e6f-8bf1-51e7ce3131a9', 'status': 'failed'}"
+        },
+        "torch-tensor-parallelism": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '042fcd7b-78c9-4e5b-b1ba-6ea6c61dd0d1', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-cython-ext": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '6b153743-eac6-4db1-aa76-04fe772aa044', 'status': 'failed'}"
+        },
+        "distribution-search": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '50b9598d-0c7e-46fb-89b1-f94c5e0e3402', 'status': 'failed'}"
+        },
+        "headless-terminal": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'f7118638-155f-4603-8dd5-f23e4106b224', 'status': 'failed'}"
+        },
+        "mteb-retrieve": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '21d1e720-fd9f-4de6-bcb3-854da321da93', 'status': 'failed'}"
+        },
+        "qemu-alpine-ssh": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'f417c115-df28-4037-9109-29679bc24e61', 'status': 'failed'}"
+        },
+        "train-fasttext": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '7bc12ee3-3f1f-44cb-9a7b-17819c9d7882', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-pmars": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '2bbdf96f-9626-4d8c-b40f-6b5a6324aad6', 'status': 'failed'}"
+        },
+        "dna-assembly": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '606c7079-6738-4a8b-8cbc-e0e2db00d326', 'status': 'failed'}"
+        },
+        "hf-model-inference": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '604c5a3e-41aa-425d-85cb-1fa1e4e9e5a9', 'status': 'failed'}"
+        },
+        "multi-source-data-merger": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'ff8eba41-3c6f-4d12-8aa2-5bdd5384bc4e', 'status': 'failed'}"
+        },
+        "qemu-startup": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '06eec7f9-48e9-45b6-b1da-fc1e56a281d6', 'status': 'failed'}"
+        },
+        "tune-mjcf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'ed86b2cf-c33f-4878-a8f1-1bdf3ac2dfb9', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-pov-ray": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '33ca4546-9673-4d14-ad93-989188607cad', 'status': 'failed'}"
+        },
+        "dna-insert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '8dedf51e-b207-413d-bd80-b3283a923e42', 'status': 'failed'}"
+        },
+        "install-windows-3.11": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '72b5b059-7684-448d-8b1c-219d5540fae2', 'status': 'failed'}"
+        },
+        "nginx-request-logging": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '23e189b0-f58f-4d3c-861f-ba97961cf77e', 'status': 'failed'}"
+        },
+        "query-optimize": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '751cd386-81d4-4a97-9189-a3d55215a45b', 'status': 'failed'}"
+        },
+        "video-processing": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'd2cb4b21-9124-4316-ab62-284a8c81ea5f', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "caffe-cifar-10": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'c1eb607d-5a6b-431c-8279-afc5db383cfb', 'status': 'failed'}"
+        },
+        "extract-elf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '193157fc-5707-4780-b103-1cf06e17e0a9', 'status': 'failed'}"
+        },
+        "kv-store-grpc": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '114eac29-192b-456b-94df-8066c3457e21', 'status': 'failed'}"
+        },
+        "openssl-selfsigned-cert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'b2d974a3-0aa4-4036-a982-7907bffde99a', 'status': 'failed'}"
+        },
+        "raman-fitting": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'cb74235e-8067-4fae-8cfa-07d6475df7d7', 'status': 'failed'}"
+        },
+        "vulnerable-secret": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '5af8d481-f3b1-4058-92cf-a8d8cc74b8c2', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "cancel-async-tasks": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '149310bf-e5ce-4911-bff7-31a8b81e1cbd', 'status': 'failed'}"
+        },
+        "extract-moves-from-video": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '75924f1a-34be-4076-93b1-b793242e3818', 'status': 'failed'}"
+        },
+        "large-scale-text-editing": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '44559d6a-6872-473b-bc6b-58721ede9afd', 'status': 'failed'}"
+        },
+        "overfull-hbox": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'c92cd514-9b69-4dad-a5e2-241d041491ed', 'status': 'failed'}"
+        },
+        "regex-chess": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '35857908-ecae-49a3-8948-4634b4b6e1fa', 'status': 'failed'}"
+        },
+        "winning-avg-corewars": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'dbb18043-152c-4f14-94e2-d4cfca6911ca', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "chess-best-move": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '5027a2c9-be87-4201-aabc-d6a4e250e046', 'status': 'failed'}"
+        },
+        "feal-differential-cryptanalysis": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'ef6b03a3-a910-4a2b-84c8-8a79291ee758', 'status': 'failed'}"
+        },
+        "largest-eigenval": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '98d3038c-c291-4525-80ba-5c4f62bf7170', 'status': 'failed'}"
+        },
+        "password-recovery": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'fc9a67f2-e045-47df-ba5d-3106489bfc02', 'status': 'failed'}"
+        },
+        "regex-log": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'ce23bbd1-bf34-4dcb-b882-697a1180f41d', 'status': 'failed'}"
+        },
+        "write-compressor": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '9b9b682a-f09e-4ca8-b672-71fcbd197093', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "circuit-fibsqrt": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'cd7ee6f0-ea64-43f0-a1b1-62995189ba02', 'status': 'failed'}"
+        },
+        "feal-linear-cryptanalysis": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'c08744b5-ddf1-424b-9504-2d3d8f91ce0f', 'status': 'failed'}"
+        },
+        "llm-inference-batching-scheduler": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'bf868db6-9a7b-4183-ab3f-18aacd84334d', 'status': 'failed'}"
+        },
+        "path-tracing": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'cd20dd34-408e-4f15-a2cb-b4771d393935', 'status': 'failed'}"
+        },
+        "reshard-c4-data": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'c030a6af-872a-4c9d-a7d4-233742c682d3', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "cobol-modernization": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '81ed831f-0821-4865-bbc6-7c4de76d385b', 'status': 'failed'}"
+        },
+        "filter-js-from-html": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'a0c1d4d4-9060-462c-9980-f9a6ae5ccf08', 'status': 'failed'}"
+        },
+        "log-summary-date-ranges": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '33965f70-a8ac-4043-bd50-99435b6366b1', 'status': 'failed'}"
+        },
+        "path-tracing-reverse": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'a28d728e-b3ab-49d2-8f60-5fcc4847ac55', 'status': 'failed'}"
+        },
+        "rstan-to-pystan": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'f758bd3d-b472-4807-b623-c6d984821dc6', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "code-from-image": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'f506727c-e802-48f6-b09c-5a10ba59ba8f', 'status': 'failed'}"
+        },
+        "financial-document-processor": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'f494a270-b489-48a5-99f2-5dd6792f132b', 'status': 'failed'}"
+        },
+        "mailman": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '6578c414-8a49-4c57-afd3-fa125145ffb5', 'status': 'failed'}"
+        },
+        "polyglot-c-py": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '390d3e4b-50f7-4f64-8325-e56931b5f870', 'status': 'failed'}"
+        },
+        "sam-cell-seg": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'f5272cd6-f336-4646-b28d-daff4cdd4fe5', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "compile-compcert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '998580c8-4e0d-481f-8186-d9ea179f3adf', 'status': 'failed'}"
+        },
+        "fix-code-vulnerability": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'e7bd2138-7883-4fa6-86fa-5b1954202a2d', 'status': 'failed'}"
+        },
+        "make-doom-for-mips": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '38a7f524-4fc1-4a02-9789-5091d09ee223', 'status': 'failed'}"
+        },
+        "polyglot-rust-c": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '2e1a5b6d-44b5-4684-a7cc-3d7b8e10dd5e', 'status': 'failed'}"
+        },
+        "sanitize-git-repo": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'd3ca6c0a-95ff-41c1-b217-0a5e251dd2f9', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "configure-git-webserver": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'a172a5d7-a891-4daf-a951-283f920d89ba', 'status': 'failed'}"
+        },
+        "fix-git": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '08bc7efe-924b-4d81-aef7-1bb8fa402cfc', 'status': 'failed'}"
+        },
+        "make-mips-interpreter": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'dd978351-efae-4ec6-870c-f38175d112e1', 'status': 'failed'}"
+        },
+        "portfolio-optimization": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'bcc0194b-039b-4118-b88b-f24773b2640c', 'status': 'failed'}"
+        },
+        "schemelike-metacircular-eval": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '7f602386-e652-4ca6-bc1a-0cdb7278e236', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "constraints-scheduling": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '2ef00f5b-5344-43c1-87d8-f09aa81cbd1b', 'status': 'failed'}"
+        },
+        "fix-ocaml-gc": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'caaf0407-6428-4f48-91b7-338b680db933', 'status': 'failed'}"
+        },
+        "mcmc-sampling-stan": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '967a1d29-4db1-44ef-9ef3-9608c1e467c5', 'status': 'failed'}"
+        },
+        "protein-assembly": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '2243188c-bfd7-4042-b952-2fe9273432c8', 'status': 'failed'}"
+        },
+        "sparql-university": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '6a56cbd9-5a43-4ad4-9fb6-54ffca1efe96', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "count-dataset-tokens": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '4870073c-9e55-4e49-8b0e-17766f34d1c4', 'status': 'failed'}"
+        },
+        "gcode-to-text": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '97fa9137-b474-476f-8d88-2c64ea7e0c0b', 'status': 'failed'}"
+        },
+        "merge-diff-arc-agi-task": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': '75bbfe61-0906-487a-bf96-f952bc6dccf3', 'status': 'failed'}"
+        },
+        "prove-plus-comm": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'c189efe3-60d6-4a96-9d98-da9ab5af1922', 'status': 'failed'}"
+        },
+        "sqlite-db-truncate": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: the JSON object must be str, bytes or bytearray, not NoneType', 'context_id': 'a62279b9-0ee9-4446-a61d-7d54429c36c6', 'status': 'failed'}"
+        }
+      }
+    }
+  ]
+}
