@@ -22,6 +22,10 @@
       "agent_tracing_endpoint": {
         "type": "string",
         "secret": false
+      },
+      "agent_llmhub_apikey": {
+        "type": "string",
+        "secret": true
       }
     },
     "required": [
@@ -54,7 +58,8 @@
         "openrouter_api_key": "${config.agent_openrouter_api_key}",
         "tracing_key": "${config.agent_tracing_key}",
         "tracing_project": "${config.agent_tracing_project}",
-        "tracing_endpoint": "${config.agent_tracing_endpoint}"
+        "tracing_endpoint": "${config.agent_tracing_endpoint}",
+        "llmhub_apikey": "${config.agent_llmhub_apikey}"
       }
     }
   },
