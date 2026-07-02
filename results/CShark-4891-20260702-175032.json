@@ -1,0 +1,388 @@
+{
+  "status": "completed",
+  "participants": {
+    "green": "019d87ef-2c6d-7091-8d93-827799c2ade3",
+    "agent": "019e8472-e017-72f0-9ba9-8c5d20e02d32"
+  },
+  "results": [
+    {
+      "score": 1.0,
+      "max_score": 6,
+      "pass_rate": 16.666666666666664,
+      "task_rewards": {
+        "adaptive-rejection-sampler": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '8785d8fc-64ab-4a67-a5b0-d56c2e964c04', 'status': 'failed'}"
+        },
+        "crack-7z-hash": {
+          "error": "Command timed out after 30 seconds"
+        },
+        "git-leak-recovery": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "model-extraction-relu-logits": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "pypi-server": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '5a85aeef-a700-4e2e-9988-3bfe470e154c', 'status': 'failed'}"
+        },
+        "sqlite-with-gcov": {
+          "reward": 1.0
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "bn-fit-modify": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "custom-memory-heap-crash": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '2df2fec9-1154-40d5-a40d-ab46f2348111', 'status': 'failed'}"
+        },
+        "git-multibranch": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "modernize-scientific-stack": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "pytorch-model-cli": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "torch-pipeline-parallelism": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '60816fd4-3a89-4fc6-9f90-c1abb9f23b39', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "break-filter-js-from-html": {
+          "reward": 0.0
+        },
+        "db-wal-recovery": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "gpt2-codegolf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '46447e0b-8584-4c40-95cd-97d79c0604f3', 'status': 'failed'}"
+        },
+        "mteb-leaderboard": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '18b6c61d-7bb3-4d64-a9e4-69c934a3b2fb', 'status': 'failed'}"
+        },
+        "pytorch-model-recovery": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "torch-tensor-parallelism": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 2.0,
+      "max_score": 6,
+      "pass_rate": 33.33333333333333,
+      "task_rewards": {
+        "build-cython-ext": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "distribution-search": {
+          "reward": 1.0
+        },
+        "headless-terminal": {
+          "reward": 1.0
+        },
+        "mteb-retrieve": {
+          "reward": 0.0
+        },
+        "qemu-alpine-ssh": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '63368a11-cf58-4e39-a258-72fecadfd524', 'status': 'failed'}"
+        },
+        "train-fasttext": {
+          "error": "Command timed out after 300 seconds"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-pmars": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "dna-assembly": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'e7b26e02-7d49-44d7-b520-d6d972f75ffb', 'status': 'failed'}"
+        },
+        "hf-model-inference": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '9f934d2f-0de9-463f-9622-d6d2a1b0d509', 'status': 'failed'}"
+        },
+        "multi-source-data-merger": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "qemu-startup": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': \"Agent error: Error code: 500 - {'detail': 'Model deployment failed or was cancelled'}\", 'context_id': 'f846c6e2-b0e7-4dc7-b38b-5ca0691f840d', 'status': 'failed'}"
+        },
+        "tune-mjcf": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '77d3bd00-fa59-4481-a8c7-5f16ac734987', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-pov-ray": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '9fefdce4-3d78-49b2-a873-fc049c3af5f9', 'status': 'failed'}"
+        },
+        "dna-insert": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "install-windows-3.11": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'afec9964-fea6-452a-94da-7d71be54edc6', 'status': 'failed'}"
+        },
+        "nginx-request-logging": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "query-optimize": {
+          "error": "Command timed out after 60 seconds"
+        },
+        "video-processing": {
+          "error": "HTTP Error 503: Network communication error: "
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "caffe-cifar-10": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'ca28b790-67fa-49ba-b1d4-994dbc20ea15', 'status': 'failed'}"
+        },
+        "extract-elf": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "kv-store-grpc": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "openssl-selfsigned-cert": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "raman-fitting": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "vulnerable-secret": {
+          "error": "HTTP Error 503: Network communication error: "
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "cancel-async-tasks": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'cc943c8b-0966-4398-bc43-87a02fb1f2ce', 'status': 'failed'}"
+        },
+        "extract-moves-from-video": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '067d02c3-be10-4d10-a835-ae2f5f9cd7dc', 'status': 'failed'}"
+        },
+        "large-scale-text-editing": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "overfull-hbox": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "regex-chess": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'be17005b-5234-4795-97be-1f761cb93ad7', 'status': 'failed'}"
+        },
+        "winning-avg-corewars": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'a611b36f-3fc3-45d7-8c3b-22a0f28e6f5a', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "chess-best-move": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "feal-differential-cryptanalysis": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'b308f089-9020-4202-adf6-06057aa9c777', 'status': 'failed'}"
+        },
+        "largest-eigenval": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "password-recovery": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "regex-log": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '6dd4e825-358c-4b4f-a059-baefecdba708', 'status': 'failed'}"
+        },
+        "write-compressor": {
+          "error": "HTTP Error 503: Network communication error: "
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "circuit-fibsqrt": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '644b2ae9-2312-47e0-b5d3-0fa35a673eb1', 'status': 'failed'}"
+        },
+        "feal-linear-cryptanalysis": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'be13d61e-ceb0-49e3-85ac-1e0790a625da', 'status': 'failed'}"
+        },
+        "llm-inference-batching-scheduler": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "path-tracing": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'b2c07766-8cac-4bb2-a9cf-d17d316be7ff', 'status': 'failed'}"
+        },
+        "reshard-c4-data": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '5e08ba0b-878a-442d-b853-74c7ee09f38d', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "cobol-modernization": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "filter-js-from-html": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "log-summary-date-ranges": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "path-tracing-reverse": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "rstan-to-pystan": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'ed4d4557-5d19-4535-b709-c554730fe54c', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 1.0,
+      "max_score": 5,
+      "pass_rate": 20.0,
+      "task_rewards": {
+        "code-from-image": {
+          "reward": 1.0
+        },
+        "financial-document-processor": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "mailman": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "polyglot-c-py": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '16b0adce-2a4e-4019-a357-9b8eb0b994f1', 'status': 'failed'}"
+        },
+        "sam-cell-seg": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '25f00be0-3a41-47dc-8bb6-1c06f47e1ecb', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "compile-compcert": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'd27415a2-dffa-46db-a58c-a12ebe348261', 'status': 'failed'}"
+        },
+        "fix-code-vulnerability": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "make-doom-for-mips": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "polyglot-rust-c": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'db27ff59-bf27-4ca4-8579-bfed5e1a11e2', 'status': 'failed'}"
+        },
+        "sanitize-git-repo": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'a6071631-379c-469b-8712-1ba35c819821', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "configure-git-webserver": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '8ad95b35-ed4a-4b8e-b7c2-20366dd6b3a2', 'status': 'failed'}"
+        },
+        "fix-git": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "make-mips-interpreter": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "portfolio-optimization": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '8e9c2af2-875e-4a7c-91ef-945c16ef4965', 'status': 'failed'}"
+        },
+        "schemelike-metacircular-eval": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': 'aae4b640-b8f5-41ce-9d55-bf70a31a46ff', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 1.0,
+      "max_score": 5,
+      "pass_rate": 20.0,
+      "task_rewards": {
+        "constraints-scheduling": {
+          "reward": 1.0
+        },
+        "fix-ocaml-gc": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "mcmc-sampling-stan": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "protein-assembly": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "sparql-university": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '70a53c3b-b507-4fa5-a35f-49c0bfe21737', 'status': 'failed'}"
+        }
+      }
+    },
+    {
+      "score": 0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "count-dataset-tokens": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "gcode-to-text": {
+          "error": "http://127.0.0.1:8080/agent responded with: {'response': 'Agent error: Request timed out.', 'context_id': '12d413ca-4192-4fef-882a-4b2509683cba', 'status': 'failed'}"
+        },
+        "merge-diff-arc-agi-task": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "prove-plus-comm": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "sqlite-db-truncate": {
+          "error": "HTTP Error 503: Network communication error: "
+        }
+      }
+    }
+  ]
+}
