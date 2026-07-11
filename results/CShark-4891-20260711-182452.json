@@ -1,0 +1,388 @@
+{
+  "status": "completed",
+  "participants": {
+    "green": "019d87ef-2c6d-7091-8d93-827799c2ade3",
+    "agent": "019e8472-e017-72f0-9ba9-8c5d20e02d32"
+  },
+  "results": [
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "adaptive-rejection-sampler": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "crack-7z-hash": {
+          "error": "Command timed out after 30 seconds"
+        },
+        "git-leak-recovery": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "model-extraction-relu-logits": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "pypi-server": {
+          "reward": 0.0
+        },
+        "sqlite-with-gcov": {
+          "error": "HTTP Error 503: Network communication error: "
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "bn-fit-modify": {
+          "reward": 0.0
+        },
+        "custom-memory-heap-crash": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "git-multibranch": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "modernize-scientific-stack": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "pytorch-model-cli": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "torch-pipeline-parallelism": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "break-filter-js-from-html": {
+          "reward": 0.0
+        },
+        "db-wal-recovery": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "gpt2-codegolf": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "mteb-leaderboard": {
+          "reward": 0.0
+        },
+        "pytorch-model-recovery": {
+          "reward": 0.0
+        },
+        "torch-tensor-parallelism": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-cython-ext": {
+          "reward": 0.0
+        },
+        "distribution-search": {
+          "reward": 0.0
+        },
+        "headless-terminal": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "mteb-retrieve": {
+          "reward": 0.0
+        },
+        "qemu-alpine-ssh": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "train-fasttext": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-pmars": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "dna-assembly": {
+          "reward": 0.0
+        },
+        "hf-model-inference": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "multi-source-data-merger": {
+          "reward": 0.0
+        },
+        "qemu-startup": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "tune-mjcf": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "build-pov-ray": {
+          "error": "Command timed out after 300 seconds"
+        },
+        "dna-insert": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "install-windows-3.11": {
+          "reward": 0.0
+        },
+        "nginx-request-logging": {
+          "reward": 0.0
+        },
+        "query-optimize": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "video-processing": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "caffe-cifar-10": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "extract-elf": {
+          "reward": 0.0
+        },
+        "kv-store-grpc": {
+          "reward": 0.0
+        },
+        "openssl-selfsigned-cert": {
+          "reward": 0.0
+        },
+        "raman-fitting": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "vulnerable-secret": {
+          "error": "Command timed out after 10 seconds"
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "cancel-async-tasks": {
+          "reward": 0.0
+        },
+        "extract-moves-from-video": {
+          "reward": 0.0
+        },
+        "large-scale-text-editing": {
+          "reward": 0.0
+        },
+        "overfull-hbox": {
+          "reward": 0.0
+        },
+        "regex-chess": {
+          "reward": 0.0
+        },
+        "winning-avg-corewars": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 6,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "chess-best-move": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "feal-differential-cryptanalysis": {
+          "reward": 0.0
+        },
+        "largest-eigenval": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "password-recovery": {
+          "error": "HTTP Error 503: Network communication error: "
+        },
+        "regex-log": {
+          "reward": 0.0
+        },
+        "write-compressor": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "circuit-fibsqrt": {
+          "reward": 0.0
+        },
+        "feal-linear-cryptanalysis": {
+          "reward": 0.0
+        },
+        "llm-inference-batching-scheduler": {
+          "reward": 0.0
+        },
+        "path-tracing": {
+          "reward": 0.0
+        },
+        "reshard-c4-data": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "cobol-modernization": {
+          "reward": 0.0
+        },
+        "filter-js-from-html": {
+          "reward": 0.0
+        },
+        "log-summary-date-ranges": {
+          "reward": 0.0
+        },
+        "path-tracing-reverse": {
+          "reward": 0.0
+        },
+        "rstan-to-pystan": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "code-from-image": {
+          "reward": 0.0
+        },
+        "financial-document-processor": {
+          "reward": 0.0
+        },
+        "mailman": {
+          "reward": 0.0
+        },
+        "polyglot-c-py": {
+          "reward": 0.0
+        },
+        "sam-cell-seg": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "compile-compcert": {
+          "reward": 0.0
+        },
+        "fix-code-vulnerability": {
+          "reward": 0.0
+        },
+        "make-doom-for-mips": {
+          "reward": 0.0
+        },
+        "polyglot-rust-c": {
+          "reward": 0.0
+        },
+        "sanitize-git-repo": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "configure-git-webserver": {
+          "reward": 0.0
+        },
+        "fix-git": {
+          "reward": 0.0
+        },
+        "make-mips-interpreter": {
+          "reward": 0.0
+        },
+        "portfolio-optimization": {
+          "reward": 0.0
+        },
+        "schemelike-metacircular-eval": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "constraints-scheduling": {
+          "reward": 0.0
+        },
+        "fix-ocaml-gc": {
+          "reward": 0.0
+        },
+        "mcmc-sampling-stan": {
+          "reward": 0.0
+        },
+        "protein-assembly": {
+          "reward": 0.0
+        },
+        "sparql-university": {
+          "reward": 0.0
+        }
+      }
+    },
+    {
+      "score": 0.0,
+      "max_score": 5,
+      "pass_rate": 0.0,
+      "task_rewards": {
+        "count-dataset-tokens": {
+          "reward": 0.0
+        },
+        "gcode-to-text": {
+          "reward": 0.0
+        },
+        "merge-diff-arc-agi-task": {
+          "reward": 0.0
+        },
+        "prove-plus-comm": {
+          "reward": 0.0
+        },
+        "sqlite-db-truncate": {
+          "reward": 0.0
+        }
+      }
+    }
+  ]
+}
