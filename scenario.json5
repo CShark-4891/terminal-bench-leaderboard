@@ -52,7 +52,7 @@
       "config": {}
     },
     "agent": {
-      "manifest": "https://raw.githubusercontent.com/Luca-Bke/EROverflow/refs/heads/main/amber-manifest.json5",
+      "manifest": "https://raw.githubusercontent.com/Luca-Bke/EROverflow/refs/heads/personal/luca-3/amber-manifest.json5",
       "config": {
         "academiccloud_api_key": "${config.agent_academiccloud_api_key}",
         "openrouter_api_key": "${config.agent_openrouter_api_key}",
